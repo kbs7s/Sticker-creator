@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مصمم الملصقات A4</title>
+<meta name="description" content="Design A4 sheets with multiple stickers: layout, margins, text, numbering, barcodes, QR codes, images and print preview.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%23ea6a1f'/%3E%3Cg fill='%23fff'%3E%3Crect x='7' y='6' width='8' height='6' rx='1'/%3E%3Crect x='17' y='6' width='8' height='6' rx='1'/%3E%3Crect x='7' y='14' width='8' height='6' rx='1'/%3E%3Crect x='17' y='14' width='8' height='6' rx='1'/%3E%3Crect x='7' y='22' width='8' height='5' rx='1'/%3E%3Crect x='17' y='22' width='8' height='5' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#e8651d">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true"></span>
+    <strong data-i18n="appTitle">مصمم الملصقات A4</strong>
+  </div>
+  <input id="projectName" class="project-name" type="text" aria-label="Project name">
+  <span id="saveState" class="save-state"></span>
+  <div class="actions">
+    <button class="btn" data-act="new" data-i18n="new">جديد</button>
+    <button class="btn" data-act="templates" data-i18n="templates">القوالب</button>
+    <button class="btn" data-act="projects" data-i18n="projects">مشاريعي</button>
+    <button class="btn primary" data-act="save" data-i18n="save">حفظ</button>
+    <button class="btn" data-act="share" data-i18n="share">مشاركة</button>
+    <span class="sep"></span>
+    <button class="btn icon" data-act="undo" data-i18n-title="undo" title="تراجع">↶</button>
+    <button class="btn icon" data-act="redo" data-i18n-title="redo" title="إعادة">↷</button>
+    <span class="sep"></span>
+    <button class="btn" data-act="export" data-i18n="exportFile">تصدير ملف</button>
+    <button class="btn" data-act="import" data-i18n="importFile">استيراد</button>
+    <button class="btn accent" data-act="print" data-i18n="print">طباعة / PDF</button>
+    <button class="btn icon" data-act="lang" title="Language">EN</button>
+    <button class="btn icon" data-act="theme" data-i18n-title="theme" title="المظهر">◐</button>
+    <button class="btn icon" data-act="help" data-i18n-title="help" title="دليل سريع">?</button>
+  </div>
+  <input id="importInput" type="file" accept=".json,application/json" hidden>
+</header>
+
+<main class="app">
+  <!-- Settings sidebar -->
+  <aside class="panel settings">
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="sheet" data-i18n="tabSheet">الورقة</button>
+      <button class="tab" data-tab="data" data-i18n="tabData">البيانات والترقيم</button>
+    </nav>
+
+    <section class="tabpane active" data-pane="sheet">
+      <h3 data-i18n="paper">الورق</h3>
+      <div class="grid2">
+        <label><span data-i18n="pageSize">المقاس</span>
+          <select data-bind="page.size">
+            <option value="A4">A4 (210×297)</option>
+            <option value="A5">A5 (148×210)</option>
+            <option value="A3">A3 (297×420)</option>
+            <option value="Letter">Letter (216×279)</option>
+            <option value="Legal">Legal (216×356)</option>
+            <option value="custom" data-i18n="custom">مخصص</option>
+          </select>
+        </label>
+        <label><span data-i18n="orientation">الاتجاه</span>
+          <select data-bind="page.orientation">
+            <option value="portrait" data-i18n="portrait">عمودي</option>
+            <option value="landscape" data-i18n="landscape">أفقي</option>
+          </select>
+        </label>
+        <label class="custom-only"><span data-i18n="widthMm">العرض (مم)</span><input type="number" step="0.1" min="20" data-bind="page.w"></label>
+        <label class="custom-only"><span data-i18n="heightMm">الارتفاع (مم)</span><input type="number" step="0.1" min="20" data-bind="page.h"></label>
+      </div>
+
+      <h3 data-i18n="layoutPresets">قوالب التقسيم الجاهزة</h3>
+      <select id="presetSelect" class="full"></select>
+      <button class="btn full lib-btn" data-act="library"><span data-i18n="sheetLibrary">مكتبة أوراق الملصقات التجارية</span> <span id="libCount" class="badge"></span></button>
+      <div id="sheetRef" class="info"></div>
+
+      <h3 data-i18n="grid">عدد الملصقات</h3>
+      <div class="grid2">
+        <label><span data-i18n="cols">الأعمدة</span><input type="number" min="1" max="40" data-bind="layout.cols"></label>
+        <label><span data-i18n="rows">الصفوف</span><input type="number" min="1" max="60" data-bind="layout.rows"></label>
+      </div>
+
+      <h3 data-i18n="labelSize">قياس الملصق</h3>
+      <div class="seg" data-seg="layout.sizeMode">
+        <button data-val="auto" data-i18n="sizeAuto">تلقائي من الهوامش</button>
+        <button data-val="fixed" data-i18n="sizeFixed">قياس ثابت</button>
+      </div>
+      <div class="grid2 fixed-only">
+        <label><span data-i18n="labelW">عرض الملصق (مم)</span><input type="number" step="0.1" min="5" data-bind="layout.labelW"></label>
+        <label><span data-i18n="labelH">ارتفاع الملصق (مم)</span><input type="number" step="0.1" min="5" data-bind="layout.labelH"></label>
+        <label class="check span2"><input type="checkbox" data-bind="layout.center"><span data-i18n="centerOnPage">توسيط على الصفحة</span></label>
+      </div>
+
+      <h3 data-i18n="margins">الهوامش والمسافات (مم)</h3>
+      <div class="grid2 margins">
+        <label><span data-i18n="mTop">أعلى</span><input type="number" step="0.1" min="0" data-bind="layout.mt"></label>
+        <label><span data-i18n="mBottom">أسفل</span><input type="number" step="0.1" min="0" data-bind="layout.mb"></label>
+        <label><span data-i18n="mLeft">يسار</span><input type="number" step="0.1" min="0" data-bind="layout.ml"></label>
+        <label><span data-i18n="mRight">يمين</span><input type="number" step="0.1" min="0" data-bind="layout.mr"></label>
+        <label><span data-i18n="gapX">مسافة أفقية</span><input type="number" step="0.1" min="0" data-bind="layout.gapX"></label>
+        <label><span data-i18n="gapY">مسافة عمودية</span><input type="number" step="0.1" min="0" data-bind="layout.gapY"></label>
+      </div>
+
+      <h3 data-i18n="shapeOrder">الشكل والترتيب</h3>
+      <div class="grid2">
+        <label><span data-i18n="radius">تدوير الزوايا (مم)</span><input type="number" step="0.5" min="0" data-bind="layout.radius"></label>
+        <label><span data-i18n="fillOrder">ترتيب التعبئة</span>
+          <select data-bind="layout.order">
+            <option value="row-ltr" data-i18n="orderLtr">صفوف: يسار ← يمين</option>
+            <option value="row-rtl" data-i18n="orderRtl">صفوف: يمين ← يسار</option>
+            <option value="col" data-i18n="orderCol">أعمدة: أعلى ← أسفل</option>
+          </select>
+        </label>
+        <label class="check span2"><input type="checkbox" data-bind="layout.scaleContent"><span data-i18n="scaleContent">تحجيم التصميم تلقائياً عند تغيير القياس</span></label>
+      </div>
+      <div id="layoutInfo" class="info"></div>
+    </section>
+
+    <section class="tabpane" data-pane="data">
+      <h3 data-i18n="dataSource">مصدر البيانات</h3>
+      <div class="seg" data-seg="data.mode">
+        <button data-val="copies" data-i18n="modeCopies">نسخ / ترقيم</button>
+        <button data-val="csv" data-i18n="modeCsv">جدول بيانات (CSV)</button>
+      </div>
+
+      <div class="copies-only">
+        <label class="full"><span data-i18n="labelCount">عدد الملصقات</span>
+          <div class="row">
+            <input type="number" min="1" max="5000" data-bind="data.copies">
+            <button class="btn small" data-act="fillPage" data-i18n="fillPage">صفحة كاملة</button>
+          </div>
+        </label>
+      </div>
+
+      <div class="csv-only">
+        <p class="hint" data-i18n="csvHint">الصق بيانات من Excel أو CSV. الصف الأول = أسماء الأعمدة. استخدم {اسم_العمود} داخل النصوص.</p>
+        <textarea data-bind="data.csv" rows="8" class="mono" spellcheck="false" placeholder="name,code&#10;Ali,1001&#10;Sara,1002"></textarea>
+        <div class="row">
+          <button class="btn small" data-act="loadCsv" data-i18n="loadCsv">تحميل ملف CSV</button>
+          <label class="inline"><span data-i18n="copiesPerRow">نسخ لكل صف</span><input type="number" min="1" max="100" data-bind="data.csvCopies"></label>
+        </div>
+        <input id="csvInput" type="file" accept=".csv,.txt,.tsv,.xlsx,.xlsm,.xls,.ods,text/csv" hidden>
+        <div id="csvInfo" class="info"></div>
+      </div>
+
+      <h3 data-i18n="numbering">الترقيم التسلسلي {n}</h3>
+      <div class="grid2">
+        <label><span data-i18n="startAt">يبدأ من</span><input type="number" data-bind="data.serial.start"></label>
+        <label><span data-i18n="step">الخطوة</span><input type="number" data-bind="data.serial.step"></label>
+        <label><span data-i18n="digits">عدد الخانات</span><input type="number" min="0" max="12" data-bind="data.serial.pad"></label>
+        <label><span data-i18n="prefix">بادئة</span><input type="text" data-bind="data.serial.prefix"></label>
+        <label><span data-i18n="suffix">لاحقة</span><input type="text" data-bind="data.serial.suffix"></label>
+      </div>
+
+      <h3 data-i18n="sheetUse">استخدام ورقة مستعملة</h3>
+      <label class="full"><span data-i18n="skipLabels">تخطي أول ملصقات في الصفحة الأولى</span><input type="number" min="0" data-bind="data.skip"></label>
+      <p class="hint" data-i18n="skipHint">مفيد عند إعادة استخدام ورقة طُبع جزء منها. يمكنك أيضاً النقر على الملصقات في المعاينة.</p>
+
+      <div id="lastPrinted" class="last-printed" hidden></div>
+
+      <h3 data-i18n="variables">المتغيرات المتاحة</h3>
+      <div id="varChips" class="chips"></div>
+    </section>
+  </aside>
+
+  <!-- Workspace -->
+  <section class="workspace">
+    <div class="toolbar">
+      <span class="tb-label" data-i18n="add">إضافة:</span>
+      <button class="btn small" data-add="text" data-i18n="elText">نص</button>
+      <button class="btn small" data-add="barcode" data-i18n="elBarcode">باركود</button>
+      <button class="btn small" data-add="qr" data-i18n="elQr">QR</button>
+      <button class="btn small" data-add="image" data-i18n="elImage">صورة</button>
+      <button class="btn small" data-add="rect" data-i18n="elRect">مستطيل</button>
+      <button class="btn small" data-add="ellipse" data-i18n="elEllipse">دائرة</button>
+      <button class="btn small" data-add="line" data-i18n="elLine">خط</button>
+      <button class="btn small" data-add="arctext" data-i18n="elArc">نص دائري</button>
+      <button class="btn small" data-add="icon" data-i18n="elIcon">أيقونة</button>
+      <span class="grow"></span>
+      <label class="check inline"><input type="checkbox" id="snapToggle" checked><span data-i18n="snap">محاذاة للشبكة</span></label>
+      <label class="check inline"><input type="checkbox" id="gridToggle"><span data-i18n="showGrid">إظهار الشبكة والمساطر</span></label>
+      <button class="btn icon small" data-act="zoomOut" title="−">−</button>
+      <span id="zoomLabel" class="zoom-label">100%</span>
+      <button class="btn icon small" data-act="zoomIn" title="+">+</button>
+      <button class="btn small" data-act="zoomFit" data-i18n="fit">ملاءمة</button>
+    </div>
+    <div id="stage" class="stage" tabindex="0"></div>
+    <input id="imageInput" type="file" accept="image/*" hidden>
+
+    <div class="preview-head">
+      <h2 data-i18n="sheetPreview">معاينة الورقة قبل الطباعة</h2>
+      <span id="previewInfo" class="info"></span>
+      <span class="inline-group pmode"><span class="hint" data-i18n="clickAction">عند النقر على ملصق:</span>
+        <button class="btn small on" data-pmode="skip" data-i18n="clickSkip">تخطي</button>
+        <button class="btn small" data-pmode="edit" data-i18n="clickEdit">تعديل نصه</button></span>
+      <span id="editedInfo" class="inline-group" hidden><span class="badge"></span><button class="btn small" data-act="clearEdits" data-i18n="clearEdits">مسح التعديلات</button></span>
+      <span class="grow"></span>
+      <label class="inline"><span data-i18n="previewZoom">الحجم</span>
+        <input id="previewZoom" type="range" min="20" max="100" value="45">
+      </label>
+    </div>
+    <div id="sheetPreview" class="sheet-preview"></div>
+  </section>
+
+  <!-- Inspector -->
+  <aside class="panel inspector">
+    <div id="inspector"></div>
+    <h3 data-i18n="layers">الطبقات</h3>
+    <ul id="layers" class="layers"></ul>
+  </aside>
+</main>
+
+<div id="printArea" class="print-area" aria-hidden="true"></div>
+<div id="toast" class="toast" role="status"></div>
+
+<dialog id="templatesDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="templates">القوالب</h2><button class="btn icon" value="close">✕</button></form>
+  <div id="templateGrid" class="tpl-grid"></div>
+</dialog>
+
+<dialog id="projectsDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="projects">مشاريعي</h2><button class="btn icon" value="close">✕</button></form>
+  <p class="hint" data-i18n="projectsHint">تُحفظ المشاريع في متصفحك على هذا الجهاز. استخدم "تصدير ملف" لنقلها أو أخذ نسخة احتياطية.</p>
+  <ul id="projectList" class="project-list"></ul>
+  <p style="padding:0 16px 16px"><button class="btn small" data-act="printLog" data-i18n="printLog">سجل الطباعة</button></p>
+</dialog>
+
+<dialog id="labelDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="clickEdit">تعديل نصه</h2><button class="btn icon" value="close">✕</button></form>
+  <div id="labelDlgBody" class="dlg-body"></div>
+</dialog>
+
+<dialog id="imgDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="imgEditor">تحرير الصورة</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <p class="hint" data-i18n="cropHint"></p>
+    <div class="img-stage"><canvas id="imgCanvas"></canvas></div>
+    <div id="imgSize" class="info"></div>
+    <div class="dlg-actions">
+      <button class="btn small" data-img="crop" data-i18n="crop">قص التحديد</button>
+      <button class="btn small" data-img="rotate" data-i18n="rotate90">تدوير 90°</button>
+      <button class="btn small" data-img="flip" data-i18n="flip">قلب</button>
+      <button class="btn small" data-img="trim" data-i18n="trim">قص الحواف الفارغة</button>
+      <button class="btn small" data-img="removeBg" data-i18n="removeBg">إزالة الخلفية</button>
+      <label class="inline"><span data-i18n="tolerance">درجة التسامح</span><input id="imgTol" type="range" min="2" max="120" value="30"></label>
+    </div>
+    <div class="dlg-actions">
+      <button class="btn" data-img="reset" data-i18n="reset">إرجاع</button>
+      <span class="grow"></span>
+      <button class="btn accent" data-img="apply" data-i18n="apply">تطبيق</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="shareDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="shareTitle">رابط مشاركة التصميم</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <p class="hint" data-i18n="shareHint"></p>
+    <textarea id="shareUrl" class="mono" rows="4" readonly></textarea>
+    <p id="shareWarn" class="warn" data-i18n="imagesStripped" hidden></p>
+    <div class="dlg-actions"><span id="shareLen" class="info"></span><span class="grow"></span><button class="btn accent" data-act="copyShare" data-i18n="copyLink">نسخ الرابط</button></div>
+  </div>
+</dialog>
+
+<dialog id="logDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="printLog">سجل الطباعة</h2><button class="btn icon" value="close">✕</button></form>
+  <div id="logBody" class="dlg-body"></div>
+</dialog>
+
+<div id="tour" class="tour" hidden>
+  <div class="tour-spot"></div>
+  <div class="tour-bubble" role="dialog" aria-live="polite">
+    <p class="tour-text"></p>
+    <div class="tour-nav">
+      <span class="tour-count"></span><span class="grow"></span>
+      <button class="btn small" data-tour="skip" data-i18n="skipTour">تخطي</button>
+      <button class="btn small" data-tour="prev" data-i18n="prev">السابق</button>
+      <button class="btn small accent" data-tour="next" data-i18n="next">التالي</button>
+    </div>
+  </div>
+</div>
+
+<dialog id="libraryDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="sheetLibrary">مكتبة أوراق الملصقات التجارية</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="lib-filters">
+    <input id="libSearch" type="search" data-i18n-ph="libSearch" placeholder="ابحث برقم المنتج أو الماركة أو القياس… مثال: L7160 أو 70x37">
+    <select id="libPaper"></select>
+    <select id="libShape"></select>
+  </div>
+  <p class="hint lib-hint" data-i18n="libHint"></p>
+  <div id="libList" class="lib-list"></div>
+</dialog>
+
+<dialog id="printDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="printTitle">الطباعة والتصدير</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <h3 data-i18n="printRange">نطاق الطباعة</h3>
+    <div class="seg" data-pseg="range">
+      <button data-val="all" data-i18n="rangeAll">الكل</button>
+      <button data-val="labels" data-i18n="rangeLabels">ملصقات من – إلى</button>
+      <button data-val="pages" data-i18n="rangePages">صفحات من – إلى</button>
+    </div>
+    <div class="grid2 range-fields">
+      <label><span data-i18n="from">من</span><input type="number" min="1" data-pbind="from"></label>
+      <label><span data-i18n="to">إلى</span><input type="number" min="1" data-pbind="to"></label>
+    </div>
+
+    <h3 data-i18n="calibration">معايرة الطابعة (إزاحة بالمليمتر)</h3>
+    <p class="hint" data-i18n="calibrationHint">اطبع صفحة اختبار على ورقة عادية وضعها فوق ورقة الملصقات أمام الضوء. إذا كانت الطباعة منزاحة، صحّحها هنا. يُحفظ هذا الضبط لهذا الجهاز.</p>
+    <div class="grid2">
+      <label><span data-i18n="offsetX">أفقي (+ يمين)</span><input type="number" step="0.1" id="offX"></label>
+      <label><span data-i18n="offsetY">عمودي (+ أسفل)</span><input type="number" step="0.1" id="offY"></label>
+    </div>
+
+    <h3 data-i18n="printOptions">خيارات</h3>
+    <label class="check"><input type="checkbox" data-pbind="outlines"><span data-i18n="borderPrint">طباعة حدود القص</span></label>
+    <label class="check"><input type="checkbox" data-pbind="crop"><span data-i18n="cropMarks">علامات القص في الزوايا</span></label>
+    <label class="check"><input type="checkbox" data-pbind="mirror"><span data-i18n="mirror">طباعة معكوسة (ورق النقل الحراري)</span></label>
+    <label class="check"><input type="checkbox" data-pbind="remember"><span data-i18n="rememberPrint">تذكّر آخر رقم مطبوع للمتابعة لاحقاً</span></label>
+
+    <div id="printSummary" class="info"></div>
+    <div class="dlg-actions">
+      <button class="btn" data-act="testPrint" data-i18n="testPage">صفحة اختبار</button>
+      <span class="inline-group">
+        <button class="btn" data-act="exportPng" data-i18n="exportPng">تصدير PNG</button>
+        <select id="pngDpi" aria-label="DPI"><option value="150">150 dpi</option><option value="300" selected>300 dpi</option></select>
+      </span>
+      <button class="btn" data-act="exportPdf" data-i18n="downloadPdf">تنزيل PDF</button>
+      <span class="grow"></span>
+      <button class="btn accent" data-act="doPrint" data-i18n="print">طباعة / PDF</button>
+    </div>
+    <p><button class="btn small" data-act="printLog" data-i18n="printLog">سجل الطباعة</button></p>
+    <p class="hint" data-i18n="printTips">في نافذة الطباعة: الهوامش = بلا، المقياس = 100%، وفعّل رسومات الخلفية.</p>
+  </div>
+</dialog>
+
+<script src="vendor/JsBarcode.all.min.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

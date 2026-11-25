@@ -1,0 +1,13 @@
+{
+  "name": "sticker-creator",
+  "private": true,
+  "description": "A4 sticker sheet designer — static site for GitHub Pages",
+  "scripts": {
+    "serve": "node tools/serve.js 8080",
+    "test": "playwright test",
+    "build:sw": "python3 tools/build-sw.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
