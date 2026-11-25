@@ -37,22 +37,29 @@ jobs:
           path: playwright-report/
           retention-days: 7
 
-  deploy:
+  build:
     needs: test
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - name: Collect site files
         run: |
           mkdir -p _site
-          cp -r index.html style.css fonts.css app.js sw.js manifest.webmanifest .nojekyll fonts vendor data icons _site/
+          cp -r index.html style.css fonts.css app.js sw.js manifest.webmanifest fonts vendor data icons _site/
+          touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+
+  # Publishing runs as its own job so the uploaded artifact is registered before it is looked up.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
