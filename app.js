@@ -66,6 +66,24 @@
       t_yourText: 'اكتب النص هنا', t_fileName: 'اسم الملف', t_fileMeta: 'رقم: {n}   •   السنة: 2026', t_drawer: 'درج',
       t_location: 'الموقع / Location', t_name: 'الاسم: ..............................', t_subject: 'المادة: ............................',
       t_class: 'الصف: ...............................', t_round: 'رقم',
+      sheetLibrary: 'مكتبة أوراق الملصقات التجارية', libSearch: 'ابحث برقم المنتج أو الماركة أو القياس… مثال: L7160 أو 70x37',
+      libHint: 'قياسات دقيقة لأوراق ملصقات تجارية (Avery, Herma, Zweckform…) من مكتبة gLabels. اختر رقم المنتج المطبوع على علبة الورق.',
+      allPapers: 'كل المقاسات', allShapes: 'كل الأشكال', shapeRect: 'مستطيل', shapeRound: 'دائري', shapeEllipse: 'بيضوي', noResults: 'لا توجد نتائج',
+      showing: 'عرض', of: 'من', sheet: 'الورقة',
+      showGrid: 'الشبكة والمساطر', printTitle: 'الطباعة والتصدير', printRange: 'نطاق الطباعة', rangeAll: 'الكل', rangeLabels: 'ملصقات من – إلى',
+      rangePages: 'صفحات من – إلى', from: 'من', to: 'إلى', calibration: 'معايرة الطابعة (إزاحة بالمليمتر)',
+      calibrationHint: 'اطبع "صفحة اختبار" على ورق عادي وضعها فوق ورقة الملصقات أمام الضوء. إذا كانت منزاحة، صحّح الإزاحة هنا. يُحفظ هذا الضبط لهذا الجهاز.',
+      offsetX: 'أفقي (+ يمين)', offsetY: 'عمودي (+ أسفل)', printOptions: 'خيارات', cropMarks: 'علامات القص في الزوايا',
+      mirror: 'طباعة معكوسة (ورق النقل الحراري)', rememberPrint: 'تذكّر آخر رقم مطبوع للمتابعة لاحقاً', testPage: 'صفحة اختبار',
+      exportPng: 'تصدير PNG', printTips: 'في نافذة الطباعة: الهوامش = بلا، المقياس = 100%، وفعّل رسومات الخلفية.',
+      willPrint: 'سيُطبع', lastPrinted: 'آخر طباعة', lastNumber: 'آخر رقم', continueNext: 'متابعة الترقيم والورقة من بعد آخر طباعة',
+      continued: 'تم ضبط الترقيم والتخطي للمتابعة', alreadyPrinted: 'تنبيه: بعض هذه الأرقام طُبعت سابقاً',
+      selected: 'عناصر محددة', alignTo: 'المحاذاة نسبةً إلى', toSelection: 'التحديد', toLabel: 'الملصق',
+      aLeft: '⇤ يسار', aCenterH: '↔ وسط', aRight: 'يمين ⇥', aTop: '⤒ أعلى', aMiddle: '↕ وسط', aBottom: 'أسفل ⤓',
+      distH: 'توزيع أفقي', distV: 'توزيع عمودي', lockAll: 'قفل الكل', unlockAll: 'فتح الكل', copied: 'تم النسخ', pasted: 'تم اللصق',
+      multiHint: 'Shift/Ctrl + نقر لتحديد عدة عناصر، أو اسحب مربعاً حولها. Ctrl+A لتحديد الكل.',
+      adjust: 'تعديل الصورة', brightness: 'السطوع %', contrast: 'التباين %', grayscale: 'رمادي', bw: 'أبيض وأسود', flipH: 'قلب ↔', flipV: 'قلب ↕',
+      exporting: 'جارٍ التصدير…', exported: 'تم تصدير الصور', loadFail: 'تعذّر تحميل المكتبة',
     },
     en: {
       appTitle: 'A4 Sticker Designer', new: 'New', templates: 'Templates', projects: 'My projects', save: 'Save',
@@ -116,6 +134,24 @@
       t_yourText: 'Your text here', t_fileName: 'File name', t_fileMeta: 'No: {n}   •   Year: 2026', t_drawer: 'Drawer',
       t_location: 'Location', t_name: 'Name: ..............................', t_subject: 'Subject: ...........................',
       t_class: 'Class: ..............................', t_round: 'No.',
+      sheetLibrary: 'Commercial label sheet library', libSearch: 'Search by product code, brand or size… e.g. L7160 or 70x37',
+      libHint: 'Exact geometry for commercial label sheets (Avery, Herma, Zweckform…) from the gLabels library. Pick the product code printed on your label box.',
+      allPapers: 'All paper sizes', allShapes: 'All shapes', shapeRect: 'Rectangle', shapeRound: 'Round', shapeEllipse: 'Oval', noResults: 'No results',
+      showing: 'Showing', of: 'of', sheet: 'Sheet',
+      showGrid: 'Grid & rulers', printTitle: 'Print & export', printRange: 'Print range', rangeAll: 'All', rangeLabels: 'Labels from – to',
+      rangePages: 'Pages from – to', from: 'From', to: 'To', calibration: 'Printer calibration (offset in mm)',
+      calibrationHint: 'Print a "Test page" on plain paper and hold it over the label sheet against the light. If it is off, correct the offset here. Saved for this device.',
+      offsetX: 'Horizontal (+ right)', offsetY: 'Vertical (+ down)', printOptions: 'Options', cropMarks: 'Corner crop marks',
+      mirror: 'Mirror print (transfer paper)', rememberPrint: 'Remember the last printed number to continue later', testPage: 'Test page',
+      exportPng: 'Export PNG', printTips: 'In the print dialog: margins = None, scale = 100%, enable background graphics.',
+      willPrint: 'Will print', lastPrinted: 'Last print', lastNumber: 'last number', continueNext: 'Continue numbering & sheet after last print',
+      continued: 'Numbering and skip set to continue', alreadyPrinted: 'Note: some of these numbers were printed before',
+      selected: 'elements selected', alignTo: 'Align relative to', toSelection: 'Selection', toLabel: 'Label',
+      aLeft: '⇤ Left', aCenterH: '↔ Center', aRight: 'Right ⇥', aTop: '⤒ Top', aMiddle: '↕ Middle', aBottom: 'Bottom ⤓',
+      distH: 'Distribute horizontally', distV: 'Distribute vertically', lockAll: 'Lock all', unlockAll: 'Unlock all', copied: 'Copied', pasted: 'Pasted',
+      multiHint: 'Shift/Ctrl + click to select several elements, or drag a box around them. Ctrl+A selects all.',
+      adjust: 'Image adjustments', brightness: 'Brightness %', contrast: 'Contrast %', grayscale: 'Grayscale', bw: 'Black & white', flipH: 'Flip ↔', flipV: 'Flip ↕',
+      exporting: 'Exporting…', exported: 'Images exported', loadFail: 'Could not load the library',
     },
   };
   let lang = safeGet('lang') || 'ar';
@@ -162,11 +198,20 @@
     const el = $('#toast'); el.textContent = msg; el.classList.add('show');
     clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 2200);
   }
-  function download(name, text, type = 'application/json') {
-    const a = h('a', { href: URL.createObjectURL(new Blob([text], { type })), download: name });
-    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  function saveBlob(blob, name) {
+    const a = h('a', { href: URL.createObjectURL(blob), download: name, style: 'display:none' });
+    (document.querySelector('dialog[open]') || document.body).append(a); // modal dialogs make the rest of the page inert
+    a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
   }
+  function download(name, text, type = 'application/json') { saveBlob(new Blob([text], { type }), name); }
   const todayStr = () => new Date().toLocaleDateString(lang === 'ar' ? 'ar-IQ' : 'en-GB');
+  function dateVars() {
+    const d = new Date();
+    let hijri = '';
+    try { hijri = new Intl.DateTimeFormat((lang === 'ar' ? 'ar' : 'en') + '-u-ca-islamic-umalqura', { day: 'numeric', month: 'long', year: 'numeric' }).format(d); } catch (e) { hijri = ''; }
+    return { date: todayStr(), hijri, time: d.toLocaleTimeString(lang === 'ar' ? 'ar-IQ' : 'en-GB', { hour: '2-digit', minute: '2-digit' }),
+      year: String(d.getFullYear()), month: String(d.getMonth() + 1).padStart(2, '0'), day: String(d.getDate()).padStart(2, '0') };
+  }
 
   /* ================= model ================= */
   const PAGE_SIZES = { A4: [210, 297], A5: [148, 210], A3: [297, 420], Letter: [215.9, 279.4], Legal: [215.9, 355.6] };
@@ -178,7 +223,7 @@
       align: 'center', valign: 'middle', lineHeight: 1.2, letter: 0, bg: '', pad: 0, fit: false },
     barcode: { w: 45, h: 16, value: '{n}', format: 'CODE128', showText: true, textSize: 8, color: '#000000', bg: '' },
     qr: { w: 20, h: 20, value: 'https://example.com/{n}', ecc: 'M', color: '#000000', bg: '', quiet: 0 },
-    image: { w: 20, h: 20, src: '', fitMode: 'contain', radius: 0 },
+    image: { w: 20, h: 20, src: '', fitMode: 'contain', radius: 0, brightness: 100, contrast: 100, grayscale: false, bw: false, flipH: false, flipV: false },
     rect: { w: 30, h: 15, fill: '#fde8db', stroke: '#e8651d', strokeW: 0.3, radius: 1, dashed: false },
     ellipse: { w: 20, h: 20, fill: '#fde8db', stroke: '#e8651d', strokeW: 0.3, dashed: false },
     line: { w: 40, h: 2, stroke: '#000000', strokeW: 0.4, dashed: false },
@@ -192,11 +237,12 @@
       v: 1, id: null, name: t('untitled'),
       page: { size: 'A4', orientation: 'portrait', w: 210, h: 297 },
       layout: { cols: 3, rows: 8, sizeMode: 'fixed', labelW: 70, labelH: 37, center: true,
-        mt: 0, mb: 0, ml: 0, mr: 0, gapX: 0, gapY: 0, radius: 2, order: 'row-ltr', scaleContent: true },
+        mt: 0, mb: 0, ml: 0, mr: 0, gapX: 0, gapY: 0, radius: 2, order: 'row-ltr', scaleContent: true, sheetRef: '' },
       label: { bg: '#ffffff', bgImage: '', borderPreview: true, borderPrint: false, borderColor: '#9a9a9a', borderWidth: 0.2,
         designW: 70, designH: 37, elements: [] },
       data: { mode: 'copies', copies: 24, csv: '', csvCopies: 1, skip: 0, skipList: [],
-        serial: { start: 1, step: 1, pad: 0, prefix: '', suffix: '' } },
+        serial: { start: 1, step: 1, pad: 0, prefix: '', suffix: '' }, lastPrinted: null },
+      print: { range: 'all', from: 1, to: 1, crop: false, mirror: false, remember: true },
     };
   }
 
@@ -289,8 +335,13 @@
   /* ================= state & history ================= */
   let state;
   let selectedId = null;
+  let selSet = new Set();
+  let alignTo = 'selection';
+  function selSetIds(ids) { selSet = new Set(ids); selectedId = ids.length ? ids[ids.length - 1] : null; }
+  const selectedEls = () => state.label.elements.filter((e) => selSet.has(e.id));
   let editorZoom = 4;
   let zoomAuto = true;
+  let showGrid = safeGet('grid') === '1';
   let history = [], hIdx = -1;
   let lastSavedSnap = null;
 
@@ -323,7 +374,7 @@
   function redo() { if (hIdx < history.length - 1) { hIdx++; restore(); } }
   function restore() {
     state = JSON.parse(history[hIdx]);
-    if (selectedId && !findEl(selectedId)) selectedId = null;
+    selSetIds([...selSet].filter((id) => findEl(id)));
     autosave(history[hIdx]); renderAll(); updateUndoButtons();
   }
   function updateUndoButtons() {
@@ -419,7 +470,7 @@
     return (S.prefix || '') + (neg ? '-' : '') + str + (S.suffix || '');
   }
   function getRecords(s) {
-    const D = s.data, today = todayStr();
+    const D = s.data, dv = dateVars();
     let base = [];
     if (D.mode === 'csv') {
       const { rows } = parseCSV(D.csv); const cp = Math.max(1, Math.floor(+D.csvCopies || 1));
@@ -428,12 +479,12 @@
       const n = clamp(Math.floor(+D.copies || 0), 0, 20000);
       base = Array.from({ length: n }, () => ({}));
     }
-    return base.map((r, i) => Object.assign({}, r, { n: serial(s, i), i: String(i + 1), date: today }));
+    return base.map((r, i) => Object.assign({}, r, dv, { n: serial(s, i), i: String(i + 1), _idx: i }));
   }
   function sampleRecord(s) {
     const recs = getRecords(s);
     if (recs.length) return recs[0];
-    const r = { n: serial(s, 0), i: '1', date: todayStr() };
+    const r = Object.assign(dateVars(), { n: serial(s, 0), i: '1' });
     if (s.data.mode === 'csv') for (const hd of parseCSV(s.data.csv).headers) r[hd] = '{' + hd + '}';
     return r;
   }
@@ -446,14 +497,15 @@
     for (const k of s.data.skipList || []) if (k < per) set.add(k);
     return set;
   }
-  function paginate(s) {
-    const L = computeLayout(s), recs = getRecords(s), skips = skipSet(s, L.per);
+  function paginate(s, recs) {
+    const L = computeLayout(s), skips = skipSet(s, L.per);
+    recs = recs || getRecords(s);
     const pages = []; let ri = 0;
     do {
       const pg = [];
       for (let k = 0; k < L.per; k++) {
         if (pages.length === 0 && skips.has(k)) pg.push({ k, skip: true });
-        else if (ri < recs.length) pg.push({ k, rec: recs[ri++] });
+        else if (ri < recs.length) pg.push({ k, rec: recs[ri++], page: pages.length });
         else pg.push({ k, empty: true });
       }
       pages.push(pg);
@@ -570,6 +622,12 @@
           const img = h('img', { src: e.src, alt: '', draggable: 'false' });
           img.style.objectFit = e.fitMode === 'stretch' ? 'fill' : e.fitMode;
           if (+e.radius) img.style.borderRadius = e.radius + 'mm';
+          const f = [];
+          if (+e.brightness && +e.brightness !== 100) f.push(`brightness(${e.brightness}%)`);
+          if (e.bw) f.push('grayscale(1)', 'contrast(400%)');
+          else { if (e.grayscale) f.push('grayscale(1)'); if (+e.contrast && +e.contrast !== 100) f.push(`contrast(${e.contrast}%)`); }
+          if (f.length) img.style.filter = f.join(' ');
+          if (e.flipH || e.flipV) img.style.transform = `scale(${e.flipH ? -1 : 1},${e.flipV ? -1 : 1})`;
           node.append(img);
         } else node.append(h('div', { class: 'ph' }, '🖼'));
         break;
@@ -598,29 +656,47 @@
     node.style.cssText = `width:${L.w}mm;height:${L.h}mm;border-radius:${L.radius}mm;background-color:${lab.bg || '#fff'};`;
     if (lab.bgImage) node.style.backgroundImage = `url("${lab.bgImage}")`, node.style.backgroundSize = 'cover', node.style.backgroundPosition = 'center';
     if (rec) for (const e of lab.elements) node.append(renderElement(e, rec));
-    const showBorder = mode === 'print' ? lab.borderPrint : (lab.borderPreview || lab.borderPrint);
+    const showBorder = mode === 'test' ? true : mode === 'print' ? lab.borderPrint : (lab.borderPreview || lab.borderPrint);
     if (showBorder) {
       const o = h('div', { class: 'outline' });
-      o.style.cssText = `position:absolute;inset:0;pointer-events:none;border-radius:${L.radius}mm;border:${Math.max(0.05, +lab.borderWidth || 0.2)}mm ${mode === 'print' || lab.borderPrint ? 'solid' : 'dashed'} ${lab.borderColor};`;
+      o.style.cssText = `position:absolute;inset:0;pointer-events:none;border-radius:${L.radius}mm;border:${Math.max(0.05, +lab.borderWidth || 0.2)}mm ${mode === 'print' || mode === 'test' || lab.borderPrint ? 'solid' : 'dashed'} ${mode === 'test' ? '#000' : lab.borderColor};`;
       node.append(o);
     }
     return node;
   }
 
-  function renderPage(s, L, pg, mode) {
-    const page = h('div', { class: 'page' });
+  /** opts (print only): { offX, offY, crop, mirror } */
+  function renderPage(s, L, pg, mode, opts = {}) {
+    const page = h('div', { class: 'page' + (mode === 'print' || mode === 'test' ? ' printing' : '') });
     page.style.width = L.P.w + 'mm'; page.style.height = L.P.h + 'mm';
+    const content = h('div', { style: 'position:absolute;inset:0;' });
+    const tf = [];
+    if (opts.offX || opts.offY) tf.push(`translate(${+opts.offX || 0}mm,${+opts.offY || 0}mm)`);
+    if (opts.mirror) tf.push('scaleX(-1)');
+    if (tf.length) content.style.transform = tf.join(' ');
+    page.append(content);
     for (const slot of pg) {
       const p = slotPos(L, slot.k);
-      const lab = renderLabel(s, L, slot.rec || (slot.skip || slot.empty ? null : {}), mode);
+      const printing = mode === 'print' || mode === 'test';
+      if (mode === 'print' && (slot.skip || slot.empty)) continue;
+      const lab = renderLabel(s, L, mode === 'test' ? null : slot.rec || (slot.skip || slot.empty ? null : {}), mode);
       lab.style.left = p.x + 'mm'; lab.style.top = p.y + 'mm';
       lab.dataset.k = slot.k;
-      if (slot.skip) lab.classList.add('skipped');
-      if (slot.empty) lab.classList.add('empty');
-      if (mode === 'print' && (slot.skip || slot.empty)) continue;
-      page.append(lab);
+      if (!printing && slot.skip) lab.classList.add('skipped');
+      if (!printing && slot.empty) lab.classList.add('empty');
+      content.append(lab);
+      if (opts.crop) content.append(...cropMarks(p.x, p.y, L.w, L.h));
     }
     return page;
+  }
+  function cropMarks(x, y, w, hh) {
+    const len = 3, gap = 0.8, out = [];
+    const line = (lx, ly, lw, lh) => h('div', { style: `position:absolute;left:${lx}mm;top:${ly}mm;width:${lw}mm;height:${lh}mm;background:#000;` });
+    for (const [cx, sx] of [[x, -1], [x + w, 1]]) for (const [cy, sy] of [[y, -1], [y + hh, 1]]) {
+      out.push(line(sx < 0 ? cx - gap - len : cx + gap, cy - 0.05, len, 0.1));
+      out.push(line(cx - 0.05, sy < 0 ? cy - gap - len : cy + gap, 0.1, len));
+    }
+    return out;
   }
 
   /* ================= rendering: sheet preview ================= */
@@ -661,6 +737,21 @@
     if (aw <= 0 || ah <= 0) return;
     editorZoom = clamp(Math.min(aw / (L.w * MM), ah / (L.h * MM)), 0.2, 12);
   }
+  function rulerSVG(lenMm, px, vertical) {
+    const step = px >= 6 ? 1 : px >= 2.5 ? 2 : 5;
+    const lbl = px >= 4 ? 10 : px >= 1.5 ? 20 : 50;
+    let d = '', txt = '';
+    for (let m = 0; m <= lenMm + 0.001; m += step) {
+      const pos = round(m * px, 2), big = m % 10 === 0, mid = m % 5 === 0;
+      const l = big ? 10 : mid ? 6 : 3;
+      d += vertical ? `M${18 - l} ${pos}H18` : `M${pos} ${18 - l}V18`;
+      if (m % lbl === 0) txt += vertical
+        ? `<text x="2" y="${pos + 3}" font-size="9" transform="rotate(-90 6 ${pos})">${m}</text>`
+        : `<text x="${pos + 2}" y="8" font-size="9">${m}</text>`;
+    }
+    const W = vertical ? 18 : lenMm * px, H = vertical ? lenMm * px : 18;
+    return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><path d="${d}" stroke="currentColor" stroke-width="1" fill="none"/><g fill="currentColor" font-family="sans-serif">${txt}</g></svg>`;
+  }
   function renderEditor() {
     const stage = $('#stage');
     const L = computeLayout(state);
@@ -670,22 +761,34 @@
     lab.classList.add('editor', 'editor-label');
     lab.style.position = 'absolute'; lab.style.left = '0'; lab.style.top = '0';
     lab.style.transformOrigin = '0 0'; lab.style.transform = `scale(${editorZoom})`;
-    lab.style.overflow = 'visible';
-    // clip content but keep handles visible: content clip via inner clip-path
-    lab.style.clipPath = 'none';
+    lab.style.setProperty('--z', editorZoom);
+    const single = selSet.size === 1;
     for (const n of $$('.el', lab)) {
       const e = findEl(n.dataset.id);
       if (e.locked) n.classList.add('locked');
-      if (e.id === selectedId) {
+      if (selSet.has(e.id)) {
         n.classList.add('sel');
-        if (!e.locked) for (const d of ['nw', 'ne', 'sw', 'se', 'e', 's']) {
+        if (single && !e.locked) for (const d of ['nw', 'ne', 'sw', 'se', 'e', 's']) {
           const hd = h('div', { class: 'handle ' + d, 'data-h': d });
           hd.style.transform = `scale(${1 / editorZoom})`;
           n.append(hd);
         }
       }
     }
-    const inner = h('div', { class: 'stage-inner', style: `width:${L.w * MM * editorZoom}px;height:${L.h * MM * editorZoom}px` }, lab);
+    const pxmm = MM * editorZoom;
+    const inner = h('div', { class: 'stage-inner', style: `width:${L.w * pxmm}px;height:${L.h * pxmm}px` }, lab);
+    if (showGrid) {
+      const g = h('div', { class: 'grid-overlay' });
+      const big = 5 * pxmm, small = pxmm;
+      g.style.backgroundImage = 'linear-gradient(to right, rgba(47,125,246,.28) 1px, transparent 1px), linear-gradient(to bottom, rgba(47,125,246,.28) 1px, transparent 1px)'
+        + (small >= 5 ? ', linear-gradient(to right, rgba(47,125,246,.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(47,125,246,.1) 1px, transparent 1px)' : '');
+      g.style.backgroundSize = `${big}px ${big}px, ${big}px ${big}px` + (small >= 5 ? `, ${small}px ${small}px, ${small}px ${small}px` : '');
+      g.style.borderRadius = L.radius * pxmm + 'px';
+      inner.append(g);
+      const rt = h('div', { class: 'ruler top' }); rt.innerHTML = rulerSVG(L.w, pxmm, false);
+      const rl = h('div', { class: 'ruler left' }); rl.innerHTML = rulerSVG(L.h, pxmm, true);
+      inner.append(rt, rl);
+    }
     stage.innerHTML = ''; stage.append(inner);
     $('#zoomLabel').textContent = Math.round(editorZoom * 100) + '%';
   }
@@ -693,20 +796,76 @@
   /* ================= editor interaction ================= */
   const findEl = (id) => state.label.elements.find((e) => e.id === id);
   let drag = null;
+  function refreshSelection() { renderEditor(); renderInspector(); renderLayers(); }
+  function bbox(els) {
+    const x = Math.min(...els.map((e) => e.x)), y = Math.min(...els.map((e) => e.y));
+    return { x, y, w: Math.max(...els.map((e) => e.x + e.w)) - x, h: Math.max(...els.map((e) => e.y + e.h)) - y };
+  }
+  function clientToMm(ev) {
+    const r = $('#stage .stage-inner').getBoundingClientRect(), k = editorZoom * MM;
+    return { x: (ev.clientX - r.left) / k, y: (ev.clientY - r.top) / k };
+  }
   function stagePointerDown(ev) {
     if (ev.button !== 0 && ev.pointerType === 'mouse') return;
     const handle = ev.target.closest('.handle');
     const node = ev.target.closest('.el');
-    if (!node) { if (selectedId) { selectedId = null; renderEditor(); renderInspector(); renderLayers(); } return; }
+    const additive = ev.shiftKey || ev.ctrlKey || ev.metaKey;
+    $('#stage').focus({ preventScroll: true });
+    if (!node) {
+      if (!$('#stage .stage-inner')) return;
+      const base = additive ? new Set(selSet) : new Set();
+      if (!additive && selSet.size) { selSetIds([]); refreshSelection(); }
+      $('#stage').setPointerCapture(ev.pointerId);
+      drag = { mode: 'marquee', start: clientToMm(ev), base, moved: false };
+      return;
+    }
     const e = findEl(node.dataset.id);
-    if (selectedId !== e.id) { selectedId = e.id; renderEditor(); renderInspector(); renderLayers(); }
-    if (e.locked) return;
+    if (additive && !handle) {
+      const ids = [...selSet];
+      if (selSet.has(e.id)) ids.splice(ids.indexOf(e.id), 1); else ids.push(e.id);
+      selSetIds(ids); refreshSelection();
+      if (!selSet.has(e.id)) return;
+    } else if (!selSet.has(e.id)) { selSetIds([e.id]); refreshSelection(); }
+    else if (selectedId !== e.id) { selectedId = e.id; }
+    const movable = selectedEls().filter((x) => !x.locked);
+    if (!movable.length) return;
     ev.preventDefault();
     $('#stage').setPointerCapture(ev.pointerId);
-    drag = { id: e.id, mode: handle ? handle.dataset.h : 'move', sx: ev.clientX, sy: ev.clientY, o: { x: e.x, y: e.y, w: e.w, h: e.h }, moved: false };
+    const orig = new Map(movable.map((x) => [x.id, { x: x.x, y: x.y, w: x.w, h: x.h }]));
+    drag = { id: e.id, mode: handle ? handle.dataset.h : 'move', sx: ev.clientX, sy: ev.clientY, o: { x: e.x, y: e.y, w: e.w, h: e.h },
+      orig, box: bbox(movable), moved: false };
+  }
+  function drawGuides(guides) {
+    const lab = $('#stage .editor-label'); if (!lab) return;
+    $$('.guide', lab).forEach((g) => g.remove());
+    for (const [d, v] of guides) {
+      const g = h('div', { class: 'guide ' + d });
+      if (d === 'v') g.style.left = v + 'mm'; else g.style.top = v + 'mm';
+      g.style[d === 'v' ? 'width' : 'height'] = (1 / editorZoom) + 'px';
+      lab.append(g);
+    }
+  }
+  function applyNodeGeom(e) {
+    const node = $(`#stage .el[data-id="${e.id}"]`);
+    if (node) { node.style.left = e.x + 'mm'; node.style.top = e.y + 'mm'; node.style.width = e.w + 'mm'; node.style.height = e.h + 'mm'; }
   }
   function stagePointerMove(ev) {
     if (!drag) return;
+    if (drag.mode === 'marquee') {
+      const p = clientToMm(ev), a = drag.start;
+      const r = { x: Math.min(a.x, p.x), y: Math.min(a.y, p.y), w: Math.abs(p.x - a.x), h: Math.abs(p.y - a.y) };
+      if (r.w + r.h < 0.5) return;
+      drag.moved = true;
+      const inner = $('#stage .stage-inner');
+      let m = $('.marquee', inner); if (!m) { m = h('div', { class: 'marquee' }); inner.append(m); }
+      const k = editorZoom * MM;
+      m.style.cssText = `left:${r.x * k}px;top:${r.y * k}px;width:${r.w * k}px;height:${r.h * k}px`;
+      const hit = state.label.elements.filter((e) => e.x < r.x + r.w && e.x + e.w > r.x && e.y < r.y + r.h && e.y + e.h > r.y).map((e) => e.id);
+      const ids = [...new Set([...drag.base, ...hit])];
+      selSet = new Set(ids);
+      $$('#stage .el').forEach((n) => n.classList.toggle('sel', selSet.has(n.dataset.id)));
+      return;
+    }
     const e = findEl(drag.id); if (!e) return;
     const k = editorZoom * MM;
     const dx = (ev.clientX - drag.sx) / k, dy = (ev.clientY - drag.sy) / k;
@@ -714,57 +873,58 @@
     drag.moved = true;
     const snapOn = $('#snapToggle').checked && !ev.altKey;
     const sn = (v) => (snapOn ? Math.round(v * 2) / 2 : round(v, 2));
-    const o = drag.o, L = computeLayout(state);
+    const L = computeLayout(state);
     const guides = [];
     if (drag.mode === 'move') {
+      const o = drag.box;
       let x = o.x + dx, y = o.y + dy;
       if (snapOn) {
         const tol = 1.2;
-        const cx = x + o.w / 2, cy = y + o.h / 2;
-        if (Math.abs(cx - L.w / 2) < tol) { x = L.w / 2 - o.w / 2; guides.push(['v', L.w / 2]); }
-        else if (Math.abs(x) < tol) { x = 0; guides.push(['v', 0]); }
-        else if (Math.abs(x + o.w - L.w) < tol) { x = L.w - o.w; guides.push(['v', L.w]); }
-        else x = sn(x);
-        if (Math.abs(cy - L.h / 2) < tol) { y = L.h / 2 - o.h / 2; guides.push(['h', L.h / 2]); }
-        else if (Math.abs(y) < tol) { y = 0; guides.push(['h', 0]); }
-        else if (Math.abs(y + o.h - L.h) < tol) { y = L.h - o.h; guides.push(['h', L.h]); }
-        else y = sn(y);
+        // other (non-moving) elements' edges & centres as snap targets
+        const others = state.label.elements.filter((x2) => !drag.orig.has(x2.id));
+        const tx = [0, L.w / 2, L.w, ...others.flatMap((q) => [q.x, q.x + q.w / 2, q.x + q.w])];
+        const ty = [0, L.h / 2, L.h, ...others.flatMap((q) => [q.y, q.y + q.h / 2, q.y + q.h])];
+        const snapAxis = (pos, size, targets, dir) => {
+          let best = null;
+          for (const [off, ] of [[0], [size / 2], [size]]) for (const tv of targets) {
+            const dd = Math.abs(pos + off - tv);
+            if (dd < tol && (!best || dd < best.d)) best = { d: dd, v: tv - off, g: tv };
+          }
+          if (best) { guides.push([dir, best.g]); return best.v; }
+          return sn(pos);
+        };
+        x = snapAxis(x, o.w, tx, 'v'); y = snapAxis(y, o.h, ty, 'h');
       }
-      e.x = round(x, 2); e.y = round(y, 2);
+      const ddx = x - o.x, ddy = y - o.y;
+      for (const [id, oo] of drag.orig) {
+        const q = findEl(id); q.x = round(oo.x + ddx, 2); q.y = round(oo.y + ddy, 2); applyNodeGeom(q);
+      }
     } else {
-      const m = drag.mode; let { x, y, w, h: hh } = o;
+      const o = drag.o, m = drag.mode; let { x, y, w, h: hh } = o;
       if (m.includes('e')) w = o.w + dx;
       if (m.includes('s')) hh = o.h + dy;
       if (m.includes('w')) { w = o.w - dx; x = o.x + dx; }
       if (m.includes('n')) { hh = o.h - dy; y = o.y + dy; }
       if ((e.type === 'qr' || ev.shiftKey) && m.length === 2) { // keep aspect
         const r = o.w / o.h; if (w / hh > r) hh = w / r; else w = hh * r;
-        if (m.includes('w')) x = o.x + o.w - w;
-        if (m.includes('n')) y = o.y + o.h - hh;
       }
       e.w = round(Math.max(1, sn(w)), 2); e.h = round(Math.max(0.5, sn(hh)), 2);
       e.x = round(m.includes('w') ? o.x + o.w - e.w : x, 2); e.y = round(m.includes('n') ? o.y + o.h - e.h : y, 2);
+      applyNodeGeom(e);
     }
-    const node = $(`#stage .el[data-id="${e.id}"]`);
-    if (node) {
-      node.style.left = e.x + 'mm'; node.style.top = e.y + 'mm'; node.style.width = e.w + 'mm'; node.style.height = e.h + 'mm';
-      const lab = node.parentElement;
-      $$('.guide', lab).forEach((g) => g.remove());
-      for (const [d, v] of guides) {
-        const g = h('div', { class: 'guide ' + d });
-        if (d === 'v') g.style.left = v + 'mm'; else g.style.top = v + 'mm';
-        g.style[d === 'v' ? 'width' : 'height'] = (1 / editorZoom) + 'px';
-        lab.append(g);
-      }
-    }
+    drawGuides(guides);
     syncPosFields();
   }
   function stagePointerUp() {
     if (!drag) return;
-    const moved = drag.moved; drag = null;
-    if (moved) { renderEditor(); scheduleSheet(); commit(); }
+    const d = drag; drag = null;
+    if (d.mode === 'marquee') {
+      const ids = [...selSet]; selSetIds(ids); refreshSelection(); return;
+    }
+    if (d.moved) { renderEditor(); scheduleSheet(); commit(); }
   }
   function syncPosFields() {
+    if (selSet.size !== 1) return;
     const e = findEl(selectedId); if (!e) return;
     for (const k of ['x', 'y', 'w', 'h']) { const inp = $(`#inspector [data-k="${k}"]`); if (inp && document.activeElement !== inp) inp.value = e[k]; }
   }
@@ -778,20 +938,66 @@
     const e = makeEl(type, { w: round(w), h: round(hh), x: round((L.w - w) / 2), y: round((L.h - hh) / 2) });
     if (type === 'text') e.text = t('defaultText');
     state.label.elements.push(e);
-    selectedId = e.id;
+    selSetIds([e.id]);
     afterDesignChange(true);
     if (type === 'image') pickImage((src) => { e.src = src; afterDesignChange(true); });
   }
   function removeSelected() {
-    if (!selectedId) return;
-    state.label.elements = state.label.elements.filter((e) => e.id !== selectedId);
-    selectedId = null; afterDesignChange(true);
+    if (!selSet.size) return;
+    state.label.elements = state.label.elements.filter((e) => !selSet.has(e.id));
+    selSetIds([]); afterDesignChange(true);
   }
   function duplicateSelected() {
-    const e = findEl(selectedId); if (!e) return;
-    const c = Object.assign(clone(e), { id: uid(), x: round(e.x + 2), y: round(e.y + 2) });
-    const idx = state.label.elements.indexOf(e);
-    state.label.elements.splice(idx + 1, 0, c); selectedId = c.id; afterDesignChange(true);
+    const els = selectedEls(); if (!els.length) return;
+    const ids = [];
+    for (const e of els) {
+      const c = Object.assign(clone(e), { id: uid(), x: round(e.x + 2), y: round(e.y + 2), locked: false });
+      state.label.elements.splice(state.label.elements.indexOf(e) + 1 + ids.length, 0, c); ids.push(c.id);
+    }
+    selSetIds(ids); afterDesignChange(true);
+  }
+  function copySelected() {
+    const els = selectedEls(); if (!els.length) return;
+    safeSet('clipboard', JSON.stringify(els)); toast(t('copied'));
+  }
+  function paste() {
+    let els; try { els = JSON.parse(safeGet('clipboard') || 'null'); } catch (e) { els = null; }
+    if (!Array.isArray(els) || !els.length) return;
+    const ids = [];
+    for (const e of els) {
+      const exists = findEl(e.id);
+      const c = Object.assign(makeEl(e.type in ELEMENT_DEFAULTS ? e.type : 'text'), e, { id: uid() });
+      if (exists) { c.x = round(c.x + 2); c.y = round(c.y + 2); }
+      state.label.elements.push(c); ids.push(c.id);
+    }
+    safeSet('clipboard', JSON.stringify(ids.map((id) => findEl(id))));
+    selSetIds(ids); afterDesignChange(true); toast(t('pasted'));
+  }
+  function alignSel(how) {
+    const els = selectedEls().filter((e) => !e.locked); if (!els.length) return;
+    const L = computeLayout(state);
+    const B = alignTo === 'label' || els.length === 1 ? { x: 0, y: 0, w: L.w, h: L.h } : bbox(els);
+    for (const e of els) {
+      if (how === 'left') e.x = B.x;
+      if (how === 'centerH') e.x = B.x + (B.w - e.w) / 2;
+      if (how === 'right') e.x = B.x + B.w - e.w;
+      if (how === 'top') e.y = B.y;
+      if (how === 'middle') e.y = B.y + (B.h - e.h) / 2;
+      if (how === 'bottom') e.y = B.y + B.h - e.h;
+      e.x = round(e.x); e.y = round(e.y);
+    }
+    afterDesignChange(true);
+  }
+  function distributeSel(axis) {
+    const els = selectedEls().filter((e) => !e.locked); if (els.length < 3) return;
+    const [p, sz] = axis === 'h' ? ['x', 'w'] : ['y', 'h'];
+    els.sort((a, b) => a[p] - b[p]);
+    const start = els[0][p], end = Math.max(...els.map((e) => e[p] + e[sz]));
+    const total = els.reduce((a, e) => a + e[sz], 0);
+    const gap = (end - start - total) / (els.length - 1);
+    let cur = start;
+    for (const e of els) { e[p] = round(cur); cur += e[sz] + gap; }
+    afterDesignChange(true);
   }
   function moveLayer(dir) {
     const arr = state.label.elements, e = findEl(selectedId); if (!e) return;
@@ -882,6 +1088,12 @@
     b.addEventListener('click', () => { obj[key] = !obj[key]; b.classList.toggle('on', obj[key]); onPropChange({}); });
     return b;
   }
+  function rangeField(obj, key, label, min, max, step) {
+    const out = h('output', { style: 'min-width:34px;text-align:center;font-size:12px;color:var(--text)' }, String(obj[key]));
+    const inp = h('input', { type: 'range', min, max, step }); inp.value = obj[key];
+    inp.addEventListener('input', () => { obj[key] = +inp.value; out.textContent = inp.value; onPropChange({}); });
+    return fieldWrap(label, h('div', { class: 'row', style: 'margin:0' }, inp, out), 'span2');
+  }
   function onPropChange(opts) {
     renderEditor(); scheduleSheet(); renderLayers();
     if (opts.full) { commit(); if (opts.rebuild) renderInspector(); } else scheduleCommit();
@@ -889,11 +1101,12 @@
 
   function renderInspector() {
     const box = $('#inspector'); box.innerHTML = '';
+    if (selSet.size > 1) return renderMultiInspector(box);
     const e = findEl(selectedId);
     if (!e) return renderLabelInspector(box);
     const typeName = t('el' + { text: 'Text', barcode: 'Barcode', qr: 'Qr', image: 'Image', rect: 'Rect', ellipse: 'Ellipse', line: 'Line' }[e.type]);
     box.append(h('div', { class: 'insp-title' }, h('h2', null, typeName),
-      h('button', { class: 'btn small', onclick: () => { selectedId = null; renderEditor(); renderInspector(); renderLayers(); } }, '✕')));
+      h('button', { class: 'btn small', onclick: () => { selSetIds([]); renderEditor(); renderInspector(); renderLayers(); } }, '✕')));
     box.append(h('div', { class: 'insp-actions' },
       h('button', { class: 'btn small', onclick: duplicateSelected }, t('duplicate')),
       h('button', { class: 'btn small', onclick: () => moveLayer(1) }, t('front')),
@@ -943,6 +1156,11 @@
           e.src ? h('button', { class: 'btn small danger', onclick: () => { e.src = ''; afterDesignChange(true); } }, t('remove')) : null));
         g.append(selectField(e, 'fitMode', t('fitMode'), [['contain', t('contain')], ['cover', t('cover')], ['stretch', t('stretch')]]));
         g.append(numField(e, 'radius', t('radius'), { step: 0.5, min: 0 }));
+        g.append(h('h3', { class: 'span2', style: 'margin:10px 0 0' }, t('adjust')));
+        g.append(rangeField(e, 'brightness', t('brightness'), 0, 200, 5));
+        g.append(rangeField(e, 'contrast', t('contrast'), 0, 300, 5));
+        g.append(h('div', { class: 'align-row span2' }, toggleBtn(e, 'grayscale', t('grayscale')), toggleBtn(e, 'bw', t('bw')),
+          toggleBtn(e, 'flipH', t('flipH')), toggleBtn(e, 'flipV', t('flipV'))));
         break;
       case 'rect': case 'ellipse':
         g.append(colorField(e, 'fill', t('fill'), { none: true, cls: 'span2' }));
@@ -974,10 +1192,49 @@
     gp.append(textField(e, 'name', t('name')));
   }
 
+  function renderMultiInspector(box) {
+    const els = selectedEls();
+    box.append(h('div', { class: 'insp-title' }, h('h2', null, `${els.length} ${t('selected')}`),
+      h('button', { class: 'btn small', onclick: () => { selSetIds([]); refreshSelection(); } }, '✕')));
+    box.append(h('div', { class: 'insp-actions' },
+      h('button', { class: 'btn small', onclick: duplicateSelected }, t('duplicate')),
+      h('button', { class: 'btn small', onclick: copySelected }, t('copy')),
+      h('button', { class: 'btn small', onclick: () => { const lock = !els.every((e) => e.locked); els.forEach((e) => { e.locked = lock; }); afterDesignChange(true); } },
+        els.every((e) => e.locked) ? t('unlockAll') : t('lockAll')),
+      h('button', { class: 'btn small danger', onclick: removeSelected }, t('delete'))));
+    box.append(h('h3', null, t('alignTo')));
+    const seg = h('div', { class: 'align-row' });
+    for (const [v, l] of [['selection', t('toSelection')], ['label', t('toLabel')]]) {
+      seg.append(h('button', { class: 'btn small' + (alignTo === v ? ' on' : ''), onclick: () => { alignTo = v; renderInspector(); } }, l));
+    }
+    box.append(seg);
+    const grid = h('div', { class: 'multi-grid', style: 'margin-top:8px' });
+    for (const k of ['left', 'centerH', 'right', 'top', 'middle', 'bottom']) {
+      grid.append(h('button', { class: 'btn small', onclick: () => alignSel(k) }, t('a' + k[0].toUpperCase() + k.slice(1))));
+    }
+    box.append(grid);
+    box.append(h('div', { class: 'align-row', style: 'margin-top:6px' },
+      h('button', { class: 'btn small', disabled: els.length < 3, onclick: () => distributeSel('h') }, t('distH')),
+      h('button', { class: 'btn small', disabled: els.length < 3, onclick: () => distributeSel('v') }, t('distV'))));
+    // shared text styling
+    const texts = els.filter((e) => e.type === 'text');
+    if (texts.length) {
+      box.append(h('h3', null, t('elText') + ' (' + texts.length + ')'));
+      const g = h('div', { class: 'grid2' }); box.append(g);
+      const proxy = { font: texts[0].font, size: texts[0].size, color: texts[0].color };
+      const apply = (k) => () => { texts.forEach((x) => { x[k] = proxy[k]; }); onPropChange({}); };
+      const wrapChange = (el, k) => { el.addEventListener('input', apply(k)); el.addEventListener('change', apply(k)); return el; };
+      g.append(wrapChange(selectField(proxy, 'font', t('font'), FONTS, { cls: 'span2' }), 'font'));
+      g.append(wrapChange(numField(proxy, 'size', t('size'), { step: 0.5, min: 3 }), 'size'));
+      g.append(wrapChange(colorField(proxy, 'color', t('color')), 'color'));
+    }
+    box.append(h('p', { class: 'hint' }, t('multiHint')));
+  }
   function renderLabelInspector(box) {
     const lab = state.label;
     box.append(h('h2', null, t('labelSettings')));
     box.append(h('p', { class: 'hint' }, t('noSelection')));
+    box.append(h('p', { class: 'hint' }, t('multiHint')));
     const g = h('div', { class: 'grid2' }); box.append(g);
     g.append(colorField(lab, 'bg', t('background'), { cls: 'span2' }));
     g.append(h('div', { class: 'span2' }, h('span', { class: 'hint' }, t('bgImage')), h('div', { class: 'row' },
@@ -995,7 +1252,7 @@
     return row;
   }
   function availableVars() {
-    const v = ['n', 'i', 'date'];
+    const v = ['n', 'i', 'date', 'hijri', 'time', 'year', 'month', 'day'];
     if (state.data.mode === 'csv') v.push(...parseCSV(state.data.csv).headers);
     return v;
   }
@@ -1018,11 +1275,16 @@
     const typeLbl = { text: 'Text', barcode: 'Barcode', qr: 'Qr', image: 'Image', rect: 'Rect', ellipse: 'Ellipse', line: 'Line' };
     [...state.label.elements].reverse().forEach((e) => {
       const nm = e.name || (e.type === 'text' ? e.text : e.type === 'barcode' || e.type === 'qr' ? e.value : '') || t('el' + typeLbl[e.type]);
-      const li = h('li', { class: e.id === selectedId ? 'sel' : '' },
+      const li = h('li', { class: selSet.has(e.id) ? 'sel' : '' },
         h('span', { class: 'ltype' }, t('el' + typeLbl[e.type])),
         h('span', { class: 'lname', dir: 'auto' }, String(nm).split('\n')[0]),
         e.locked ? h('span', null, '🔒') : null);
-      li.addEventListener('click', () => { selectedId = e.id; renderEditor(); renderInspector(); renderLayers(); });
+      li.addEventListener('click', (ev) => {
+        if (ev.shiftKey || ev.ctrlKey || ev.metaKey) {
+          const ids = [...selSet]; if (selSet.has(e.id)) ids.splice(ids.indexOf(e.id), 1); else ids.push(e.id); selSetIds(ids);
+        } else selSetIds([e.id]);
+        refreshSelection();
+      });
       ul.append(li);
     });
   }
@@ -1059,6 +1321,7 @@
         state.layout.labelW = round(L0.w); state.layout.labelH = round(L0.h);
       }
       normalizeDesign(state);
+      state.layout.sheetRef = '';
       $('#presetSelect').value = '';
     }
     if (path === 'data.mode' || path === 'data.csv') { csvCache.text = null; }
@@ -1102,6 +1365,8 @@
       $('#csvInfo').textContent = `${p.rows.length} ${t('csvRows')} · ${t('columns')}: ${p.headers.join(', ') || '—'}`;
     }
     $('#projectName').value = state.name || '';
+    $('#sheetRef').textContent = state.layout.sheetRef ? `✓ ${t('sheet')}: ${state.layout.sheetRef}` : '';
+    if ($('#printDlg').open) syncPrintDlg();
   }
   function renderVarChips() {
     const box = $('#varChips'); box.innerHTML = '';
@@ -1120,7 +1385,7 @@
       const [c, r, w, hh, gx, gy, rad] = PRESETS[+sel.value];
       Object.assign(state.page, { size: 'A4', orientation: 'portrait' });
       Object.assign(state.layout, { cols: c, rows: r, labelW: w, labelH: hh, gapX: gx, gapY: gy, radius: rad, sizeMode: 'fixed', center: true });
-      state.data.skipList = [];
+      state.data.skipList = []; state.layout.sheetRef = '';
       if (state.data.mode === 'copies') state.data.copies = c * r;
       normalizeDesign(state); zoomAuto = true;
       const keep = sel.value;
@@ -1131,7 +1396,7 @@
   /* ================= templates & projects ================= */
   function isDirty() { return state.id ? snapshot() !== lastSavedSnap : state.label.elements.length > 0 && history.length > 1; }
   function newFromState(s) {
-    state = s; state.id = null; selectedId = null; lastSavedSnap = null; zoomAuto = true;
+    state = s; state.id = null; selSetIds([]); lastSavedSnap = null; zoomAuto = true;
     history = []; hIdx = -1; commit(); renderAll();
   }
   function openTemplates() {
@@ -1176,7 +1441,7 @@
           h('small', null, `${L.cols}×${L.rows} · ${round(L.w, 1)}×${round(L.h, 1)} mm · ${new Date(pr.updated).toLocaleString(lang === 'ar' ? 'ar' : 'en-GB')}`)),
         h('button', { class: 'btn small primary', onclick: () => {
           if (pr.id !== state.id && isDirty() && !confirm(t('confirmNew'))) return;
-          state = migrate(pr.state); state.id = pr.id; lastSavedSnap = snapshot(); selectedId = null; zoomAuto = true;
+          state = migrate(pr.state); state.id = pr.id; lastSavedSnap = snapshot(); selSetIds([]); zoomAuto = true;
           history = []; hIdx = -1; commit(); renderAll(); $('#projectsDlg').close();
         } }, t('open')),
         h('button', { class: 'btn small', onclick: () => {
@@ -1221,19 +1486,229 @@
   }
 
   /* ================= print ================= */
-  function renderPrint() {
+  const scriptCache = {};
+  function loadScript(src) {
+    if (!scriptCache[src]) scriptCache[src] = new Promise((res, rej) => {
+      const sc = h('script', { src }); sc.onload = res; sc.onerror = () => { delete scriptCache[src]; rej(new Error(src)); };
+      document.head.append(sc);
+    });
+    return scriptCache[src];
+  }
+  function getOffset() { try { return Object.assign({ x: 0, y: 0 }, JSON.parse(safeGet('offset') || '{}')); } catch (e) { return { x: 0, y: 0 }; } }
+  function printJob() {
+    const P = state.print;
+    let recs = getRecords(state);
+    const total = recs.length;
+    if (P.range === 'labels') {
+      const a = clamp(Math.floor(+P.from || 1), 1, Math.max(1, total)), b = clamp(Math.floor(+P.to || total), a, Math.max(1, total));
+      recs = recs.slice(a - 1, b);
+    }
+    let { L, pages } = paginate(state, recs);
+    if (P.range === 'pages') {
+      const a = clamp(Math.floor(+P.from || 1), 1, pages.length), b = clamp(Math.floor(+P.to || pages.length), a, pages.length);
+      pages = pages.slice(a - 1, b);
+    }
+    const printed = pages.flat().filter((sl) => sl.rec);
+    return { L, pages, printed, total };
+  }
+  function pageOpts() { const o = getOffset(); return { offX: o.x, offY: o.y, crop: state.print.crop, mirror: state.print.mirror }; }
+  function renderPrint(test) {
     const area = $('#printArea'); area.innerHTML = '';
-    const { L, pages } = paginate(state);
-    for (const pg of pages) area.append(renderPage(state, L, pg, 'print'));
+    const { L, pages } = printJob();
+    if (test === true) {
+      const pg = Array.from({ length: L.per }, (_, k) => ({ k, empty: true }));
+      area.append(renderPage(state, L, pg, 'test', pageOpts()));
+    } else for (const pg of pages) area.append(renderPage(state, L, pg, 'print', pageOpts()));
     let st = $('#pageStyle');
     if (!st) { st = h('style', { id: 'pageStyle' }); document.head.append(st); }
     st.textContent = `@page { size: ${L.P.w}mm ${L.P.h}mm; margin: 0; }`;
   }
-  async function doPrint() {
-    renderPrint();
+  async function doPrint(test) {
+    test = test === true;
+    renderPrint(test);
     try { await document.fonts.ready; } catch (e) { /* ignore */ }
     await Promise.all($$('#printArea img').map((i) => (i.decode ? i.decode().catch(() => {}) : null)));
+    printingTest = test;
     window.print();
+    printingTest = false;
+    if (!test && state.print.remember) rememberPrinted();
+  }
+  let printingTest = false;
+  function rememberPrinted() {
+    const { printed, L } = printJob();
+    if (!printed.length) return;
+    const first = printed[0], last = printed[printed.length - 1];
+    const S = state.data.serial, step = S.step === '' || S.step == null ? 1 : +S.step;
+    state.data.lastPrinted = { mode: state.data.mode, n: last.rec.n, idx: last.rec._idx, slot: last.k, per: L.per,
+      firstNum: (+S.start || 0) + first.rec._idx * step, lastNum: (+S.start || 0) + last.rec._idx * step, count: printed.length, at: Date.now() };
+    commit(); renderLastPrinted();
+  }
+  function renderLastPrinted() {
+    const box = $('#lastPrinted'); const lp = state.data.lastPrinted;
+    box.hidden = !lp; if (!lp) return;
+    box.innerHTML = '';
+    box.append(h('div', null, h('strong', null, t('lastPrinted') + ': '),
+      `${new Date(lp.at).toLocaleString(lang === 'ar' ? 'ar' : 'en-GB')} — ${lp.count} ${t('labelsTotal')}, ${t('lastNumber')} `, h('b', { dir: 'ltr' }, lp.n)));
+    box.append(h('button', { class: 'btn small', onclick: continueAfterLast }, t('continueNext')));
+    box.append(h('button', { class: 'btn small', style: 'margin-inline-start:6px', onclick: () => { state.data.lastPrinted = null; commit(); renderLastPrinted(); } }, '✕'));
+  }
+  function continueAfterLast() {
+    const lp = state.data.lastPrinted; if (!lp) return;
+    const L = computeLayout(state);
+    if (lp.mode === 'csv') {
+      Object.assign(state.print, { range: 'labels', from: lp.idx + 2, to: getRecords(state).length });
+    } else {
+      const S = state.data.serial, step = S.step === '' || S.step == null ? 1 : +S.step;
+      S.start = lp.lastNum + step;
+      state.print.range = 'all';
+    }
+    state.data.skip = lp.per === L.per ? (lp.slot + 1) % L.per : 0;
+    state.data.skipList = [];
+    syncSettingsUI(); renderEditor(); renderSheet(); commit(); toast(t('continued'));
+  }
+
+  function openPrintDlg() {
+    const dlg = $('#printDlg');
+    syncPrintDlg();
+    if (!dlg.open) dlg.showModal();
+  }
+  function syncPrintDlg() {
+    const P = state.print, o = getOffset();
+    $$('#printDlg [data-pseg] button').forEach((b) => b.classList.toggle('on', b.dataset.val === P.range));
+    $('#printDlg .range-fields').hidden = P.range === 'all';
+    for (const inp of $$('#printDlg [data-pbind]')) {
+      const k = inp.dataset.pbind;
+      const v = k === 'outlines' ? state.label.borderPrint : P[k];
+      if (inp.type === 'checkbox') inp.checked = !!v; else if (document.activeElement !== inp) inp.value = v;
+    }
+    if (document.activeElement !== $('#offX')) $('#offX').value = o.x;
+    if (document.activeElement !== $('#offY')) $('#offY').value = o.y;
+    const { pages, printed, total } = printJob();
+    const sum = $('#printSummary');
+    let txt = `${t('willPrint')}: ${printed.length} / ${total} ${t('labelsTotal')} · ${pages.length} ${t('pages')}`;
+    const lp = state.data.lastPrinted;
+    let warn = false;
+    if (lp && lp.mode !== 'csv' && state.data.mode !== 'csv' && printed.length) {
+      const S = state.data.serial, step = S.step === '' || S.step == null ? 1 : +S.step;
+      const a = (+S.start || 0) + printed[0].rec._idx * step, b = (+S.start || 0) + printed[printed.length - 1].rec._idx * step;
+      const lo = Math.min(a, b), hi = Math.max(a, b), plo = Math.min(lp.firstNum, lp.lastNum), phi = Math.max(lp.firstNum, lp.lastNum);
+      warn = lo <= phi && hi >= plo;
+    }
+    sum.className = 'info' + (warn ? ' warn' : '');
+    sum.textContent = txt + (warn ? ' — ' + t('alreadyPrinted') : '');
+  }
+  function wirePrintDlg() {
+    const dlg = $('#printDlg');
+    dlg.addEventListener('click', (ev) => {
+      const b = ev.target.closest('[data-pseg] button'); if (!b) return;
+      state.print.range = b.dataset.val;
+      if (b.dataset.val !== 'all') {
+        const { L } = printJob(); const n = b.dataset.val === 'pages' ? paginate(state).pages.length : getRecords(state).length;
+        state.print.from = 1; state.print.to = Math.max(1, n);
+      }
+      syncPrintDlg(); scheduleCommit();
+    });
+    for (const inp of $$('#printDlg [data-pbind]')) {
+      inp.addEventListener(inp.type === 'checkbox' ? 'change' : 'input', () => {
+        const k = inp.dataset.pbind;
+        const v = inp.type === 'checkbox' ? inp.checked : +inp.value;
+        if (k === 'outlines') { state.label.borderPrint = v; renderEditor(); scheduleSheet(); renderInspector(); }
+        else state.print[k] = v;
+        syncPrintDlg(); scheduleCommit();
+      });
+    }
+    for (const id of ['offX', 'offY']) $('#' + id).addEventListener('input', () => {
+      safeSet('offset', JSON.stringify({ x: +$('#offX').value || 0, y: +$('#offY').value || 0 }));
+    });
+  }
+
+  async function exportPNG() {
+    const dpi = +$('#pngDpi').value || 300;
+    toast(t('exporting'));
+    try { await loadScript('vendor/html2canvas.min.js'); } catch (e) { toast(t('loadFail')); return; }
+    try { await document.fonts.ready; } catch (e) { /* ignore */ }
+    const { L, pages } = printJob();
+    const host = h('div', { style: 'position:fixed;left:-20000px;top:0;' });
+    document.body.append(host);
+    const base = fileName(state.name).replace(/\.sticker\.json$/, '');
+    try {
+      for (let i = 0; i < Math.min(pages.length, 50); i++) {
+        const page = renderPage(state, L, pages[i], 'print', pageOpts());
+        host.innerHTML = ''; host.append(page);
+        await Promise.all($$('img', page).map((im) => (im.decode ? im.decode().catch(() => {}) : null)));
+        const canvas = await window.html2canvas(page, { scale: dpi / 96, backgroundColor: '#ffffff', logging: false });
+        const blob = await new Promise((r) => canvas.toBlob(r, 'image/png'));
+        saveBlob(blob, `${base}-${t('page')}-${i + 1}.png`);
+      }
+      toast(t('exported'));
+    } catch (e) { toast(t('loadFail')); }
+    host.remove();
+  }
+
+  /* ================= label sheet library (gLabels DB) ================= */
+  function libLoad() { return loadScript('data/label-db.js').then(() => window.LABEL_DB || []); }
+  function sheetSVG(r) {
+    const [, , paper, , shape, w, hh, rad, nx, ny, x0, y0, gx, gy] = r;
+    const [pw, ph] = PAGE_SIZES[paper] || PAGE_SIZES.A4;
+    let body = '';
+    for (let j = 0; j < Math.min(ny, 40); j++) for (let i = 0; i < Math.min(nx, 20); i++) {
+      const x = x0 + i * (w + gx), y = y0 + j * (hh + gy);
+      body += shape === 'r' ? `<rect x="${x}" y="${y}" width="${w}" height="${hh}" rx="${Math.min(rad, w / 2, hh / 2)}"/>`
+        : `<ellipse cx="${x + w / 2}" cy="${y + hh / 2}" rx="${w / 2}" ry="${hh / 2}"/>`;
+    }
+    return `<svg viewBox="0 0 ${pw} ${ph}" preserveAspectRatio="xMidYMid meet"><rect width="${pw}" height="${ph}" fill="#fff" stroke="#bbb" stroke-width="1.5"/><g fill="#fde8db" stroke="#e8651d" stroke-width="0.8">${body}</g></svg>`;
+  }
+  async function openLibrary() {
+    let db; try { db = await libLoad(); } catch (e) { toast(t('loadFail')); return; }
+    const paperSel = $('#libPaper'), shapeSel = $('#libShape');
+    if (!paperSel.options.length || paperSel.dataset.lang !== lang) {
+      const papers = [...new Set(db.map((r) => r[2]))];
+      paperSel.innerHTML = ''; paperSel.append(h('option', { value: '' }, t('allPapers')), ...papers.map((p) => h('option', { value: p }, p)));
+      paperSel.value = state.page.size in PAGE_SIZES && papers.includes(state.page.size) ? state.page.size : 'A4';
+      shapeSel.innerHTML = '';
+      shapeSel.append(...[['', t('allShapes')], ['r', t('shapeRect')], ['o', t('shapeRound')], ['e', t('shapeEllipse')]].map(([v, l]) => h('option', { value: v }, l)));
+      paperSel.dataset.lang = lang;
+    }
+    renderLibrary();
+    $('#libraryDlg').showModal();
+    $('#libSearch').focus();
+  }
+  function renderLibrary() {
+    const db = window.LABEL_DB || [];
+    const q = $('#libSearch').value.trim().toLowerCase().replace(/[×*]/g, 'x');
+    const paper = $('#libPaper').value, shape = $('#libShape').value;
+    const terms = q.split(/\s+/).filter(Boolean);
+    const res = db.filter((r) => {
+      if (paper && r[2] !== paper) return false;
+      if (shape && r[4] !== shape) return false;
+      if (!terms.length) return true;
+      const hay = `${r[0]} ${r[1]} ${r[3]} ${r[5]}x${r[6]} ${r[8]}x${r[9]} ${r[8] * r[9]}`.toLowerCase();
+      return terms.every((tm) => hay.includes(tm));
+    });
+    const list = $('#libList'); list.innerHTML = '';
+    if (!res.length) { list.append(h('div', { class: 'empty-msg' }, t('noResults'))); return; }
+    for (const r of res.slice(0, 240)) {
+      const btn = h('button', { class: 'lib-item', type: 'button', title: r[3] });
+      const thumb = h('span'); thumb.innerHTML = sheetSVG(r);
+      const dims = r[4] === 'o' ? `Ø${r[5]}` : `${r[5]} × ${r[6]}`;
+      btn.append(thumb.firstChild, h('span', { class: 'li-txt' }, h('strong', null, `${r[0]} ${r[1]}`), h('small', null, r[3]),
+        h('small', { dir: 'ltr' }, `${r[2]} · ${r[8]}×${r[9]} = ${r[8] * r[9]} · ${dims} mm`)));
+      btn.addEventListener('click', () => applySheet(r));
+      list.append(btn);
+    }
+    if (res.length > 240) list.append(h('div', { class: 'info', style: 'grid-column:1/-1' }, `${t('showing')} 240 ${t('of')} ${res.length}`));
+  }
+  function applySheet(r) {
+    const [brand, part, paper, , shape, w, hh, rad, nx, ny, x0, y0, gx, gy] = r;
+    Object.assign(state.page, { size: paper, orientation: 'portrait' });
+    Object.assign(state.layout, { cols: nx, rows: ny, labelW: w, labelH: hh, gapX: gx, gapY: gy, ml: x0, mt: y0,
+      radius: shape === 'r' ? rad : Math.min(w, hh) / 2, sizeMode: 'fixed', center: false, sheetRef: `${brand} ${part}` });
+    state.data.skipList = [];
+    if (state.data.mode === 'copies') state.data.copies = nx * ny;
+    normalizeDesign(state); zoomAuto = true;
+    $('#libraryDlg').close();
+    renderAll(); commit();
+    toast(`${brand} ${part}`);
   }
 
   /* ================= i18n apply / theme ================= */
@@ -1242,6 +1717,7 @@
     document.title = t('appTitle');
     for (const el of $$('[data-i18n]')) el.textContent = t(el.dataset.i18n);
     for (const el of $$('[data-i18n-title]')) el.title = t(el.dataset.i18nTitle);
+    for (const el of $$('[data-i18n-ph]')) el.placeholder = t(el.dataset.i18nPh);
     $('[data-act=lang]').textContent = lang === 'ar' ? 'EN' : 'ع';
   }
   function applyTheme() {
@@ -1250,7 +1726,7 @@
   }
 
   function renderAll() {
-    syncSettingsUI(); renderPresets(); renderVarChips(); renderEditor(); renderInspector(); renderLayers(); renderSheet(); updateSaveState(); updateUndoButtons();
+    syncSettingsUI(); renderPresets(); renderVarChips(); renderLastPrinted(); renderEditor(); renderInspector(); renderLayers(); renderSheet(); updateSaveState(); updateUndoButtons();
   }
 
   /* ================= wiring ================= */
@@ -1264,7 +1740,8 @@
     const acts = {
       new: () => { if (isDirty() && !confirm(t('confirmNew'))) return; newFromState(TEMPLATES.find((x) => x.key === 'Blank').make()); },
       templates: openTemplates, projects: openProjects, save: saveProject, undo, redo,
-      export: exportFile, import: () => $('#importInput').click(), print: doPrint,
+      export: exportFile, import: () => $('#importInput').click(), print: openPrintDlg,
+      doPrint: () => doPrint(false), testPrint: () => doPrint(true), exportPng: exportPNG, library: openLibrary,
       lang: () => { lang = lang === 'ar' ? 'en' : 'ar'; safeSet('lang', lang); applyLang(); renderAll(); },
       theme: () => {
         const dark = document.documentElement.dataset.theme === 'dark' ||
@@ -1312,20 +1789,35 @@
       const typing = tag === 'input' || tag === 'textarea' || tag === 'select' || ev.target.isContentEditable;
       const mod = ev.ctrlKey || ev.metaKey;
       if (mod && ev.key.toLowerCase() === 's') { ev.preventDefault(); saveProject(); return; }
-      if (mod && ev.key.toLowerCase() === 'p') { ev.preventDefault(); doPrint(); return; }
+      if (mod && ev.key.toLowerCase() === 'p') { ev.preventDefault(); openPrintDlg(); return; }
       if (typing) return;
       if (mod && ev.key.toLowerCase() === 'z') { ev.preventDefault(); ev.shiftKey ? redo() : undo(); return; }
       if (mod && ev.key.toLowerCase() === 'y') { ev.preventDefault(); redo(); return; }
-      const e = findEl(selectedId); if (!e) return;
+      if (document.querySelector('dialog[open]')) return;
+      if (mod && ev.key.toLowerCase() === 'a') { ev.preventDefault(); selSetIds(state.label.elements.map((x) => x.id)); refreshSelection(); return; }
+      if (mod && ev.key.toLowerCase() === 'v') { ev.preventDefault(); paste(); return; }
+      if (!selSet.size) return;
+      if (mod && ev.key.toLowerCase() === 'c') { ev.preventDefault(); copySelected(); return; }
+      if (mod && ev.key.toLowerCase() === 'x') { ev.preventDefault(); copySelected(); removeSelected(); return; }
       if (mod && ev.key.toLowerCase() === 'd') { ev.preventDefault(); duplicateSelected(); return; }
       if (ev.key === 'Delete' || ev.key === 'Backspace') { ev.preventDefault(); removeSelected(); return; }
-      if (ev.key === 'Escape') { selectedId = null; renderEditor(); renderInspector(); renderLayers(); return; }
+      if (ev.key === 'Escape') { selSetIds([]); refreshSelection(); return; }
       const step = ev.shiftKey ? 1 : 0.25;
       const d = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] }[ev.key];
-      if (d && !e.locked) { ev.preventDefault(); e.x = round(e.x + d[0]); e.y = round(e.y + d[1]); renderEditor(); syncPosFields(); scheduleSheet(); scheduleCommit(); }
+      if (d) {
+        ev.preventDefault();
+        for (const e of selectedEls()) if (!e.locked) { e.x = round(e.x + d[0]); e.y = round(e.y + d[1]); }
+        renderEditor(); syncPosFields(); scheduleSheet(); scheduleCommit();
+      }
     });
 
-    window.addEventListener('beforeprint', renderPrint);
+    window.addEventListener('beforeprint', () => renderPrint(printingTest));
+    wirePrintDlg();
+    $('#gridToggle').checked = showGrid;
+    $('#gridToggle').addEventListener('change', (ev) => { showGrid = ev.target.checked; safeSet('grid', showGrid ? '1' : '0'); renderEditor(); });
+    $('#libSearch').addEventListener('input', debounce(renderLibrary, 120));
+    $('#libPaper').addEventListener('change', renderLibrary);
+    $('#libShape').addEventListener('change', renderLibrary);
     window.addEventListener('resize', debounce(() => { if (zoomAuto) renderEditor(); renderSheet(); }, 150));
     window.addEventListener('beforeunload', (ev) => { if (state.id && snapshot() !== lastSavedSnap) { ev.preventDefault(); ev.returnValue = ''; } });
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { fitCache.clear(); barcodeCache.clear(); renderEditor(); renderSheet(); });
@@ -1338,6 +1830,7 @@
   wire();
   commit();
   renderAll();
+  libLoad().then((db) => { $('#libCount').textContent = db.length; }).catch(() => {});
   // Expose for debugging
   window.StickerCreator = { get state() { return state; }, paginate: () => paginate(state) };
 })();

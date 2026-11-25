@@ -70,6 +70,8 @@
 
       <h3 data-i18n="layoutPresets">قوالب التقسيم الجاهزة</h3>
       <select id="presetSelect" class="full"></select>
+      <button class="btn full lib-btn" data-act="library"><span data-i18n="sheetLibrary">مكتبة أوراق الملصقات التجارية</span> <span id="libCount" class="badge"></span></button>
+      <div id="sheetRef" class="info"></div>
 
       <h3 data-i18n="grid">عدد الملصقات</h3>
       <div class="grid2">
@@ -153,6 +155,8 @@
       <label class="full"><span data-i18n="skipLabels">تخطي أول ملصقات في الصفحة الأولى</span><input type="number" min="0" data-bind="data.skip"></label>
       <p class="hint" data-i18n="skipHint">مفيد عند إعادة استخدام ورقة طُبع جزء منها. يمكنك أيضاً النقر على الملصقات في المعاينة.</p>
 
+      <div id="lastPrinted" class="last-printed" hidden></div>
+
       <h3 data-i18n="variables">المتغيرات المتاحة</h3>
       <div id="varChips" class="chips"></div>
     </section>
@@ -171,6 +175,7 @@
       <button class="btn small" data-add="line" data-i18n="elLine">خط</button>
       <span class="grow"></span>
       <label class="check inline"><input type="checkbox" id="snapToggle" checked><span data-i18n="snap">محاذاة للشبكة</span></label>
+      <label class="check inline"><input type="checkbox" id="gridToggle"><span data-i18n="showGrid">إظهار الشبكة والمساطر</span></label>
       <button class="btn icon small" data-act="zoomOut" title="−">−</button>
       <span id="zoomLabel" class="zoom-label">100%</span>
       <button class="btn icon small" data-act="zoomIn" title="+">+</button>
@@ -210,6 +215,58 @@
   <form method="dialog" class="dlg-head"><h2 data-i18n="projects">مشاريعي</h2><button class="btn icon" value="close">✕</button></form>
   <p class="hint" data-i18n="projectsHint">تُحفظ المشاريع في متصفحك على هذا الجهاز. استخدم "تصدير ملف" لنقلها أو أخذ نسخة احتياطية.</p>
   <ul id="projectList" class="project-list"></ul>
+</dialog>
+
+<dialog id="libraryDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="sheetLibrary">مكتبة أوراق الملصقات التجارية</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="lib-filters">
+    <input id="libSearch" type="search" data-i18n-ph="libSearch" placeholder="ابحث برقم المنتج أو الماركة أو القياس… مثال: L7160 أو 70x37">
+    <select id="libPaper"></select>
+    <select id="libShape"></select>
+  </div>
+  <p class="hint lib-hint" data-i18n="libHint"></p>
+  <div id="libList" class="lib-list"></div>
+</dialog>
+
+<dialog id="printDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="printTitle">الطباعة والتصدير</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <h3 data-i18n="printRange">نطاق الطباعة</h3>
+    <div class="seg" data-pseg="range">
+      <button data-val="all" data-i18n="rangeAll">الكل</button>
+      <button data-val="labels" data-i18n="rangeLabels">ملصقات من – إلى</button>
+      <button data-val="pages" data-i18n="rangePages">صفحات من – إلى</button>
+    </div>
+    <div class="grid2 range-fields">
+      <label><span data-i18n="from">من</span><input type="number" min="1" data-pbind="from"></label>
+      <label><span data-i18n="to">إلى</span><input type="number" min="1" data-pbind="to"></label>
+    </div>
+
+    <h3 data-i18n="calibration">معايرة الطابعة (إزاحة بالمليمتر)</h3>
+    <p class="hint" data-i18n="calibrationHint">اطبع صفحة اختبار على ورقة عادية وضعها فوق ورقة الملصقات أمام الضوء. إذا كانت الطباعة منزاحة، صحّحها هنا. يُحفظ هذا الضبط لهذا الجهاز.</p>
+    <div class="grid2">
+      <label><span data-i18n="offsetX">أفقي (+ يمين)</span><input type="number" step="0.1" id="offX"></label>
+      <label><span data-i18n="offsetY">عمودي (+ أسفل)</span><input type="number" step="0.1" id="offY"></label>
+    </div>
+
+    <h3 data-i18n="printOptions">خيارات</h3>
+    <label class="check"><input type="checkbox" data-pbind="outlines"><span data-i18n="borderPrint">طباعة حدود القص</span></label>
+    <label class="check"><input type="checkbox" data-pbind="crop"><span data-i18n="cropMarks">علامات القص في الزوايا</span></label>
+    <label class="check"><input type="checkbox" data-pbind="mirror"><span data-i18n="mirror">طباعة معكوسة (ورق النقل الحراري)</span></label>
+    <label class="check"><input type="checkbox" data-pbind="remember"><span data-i18n="rememberPrint">تذكّر آخر رقم مطبوع للمتابعة لاحقاً</span></label>
+
+    <div id="printSummary" class="info"></div>
+    <div class="dlg-actions">
+      <button class="btn" data-act="testPrint" data-i18n="testPage">صفحة اختبار</button>
+      <span class="inline-group">
+        <button class="btn" data-act="exportPng" data-i18n="exportPng">تصدير PNG</button>
+        <select id="pngDpi" aria-label="DPI"><option value="150">150 dpi</option><option value="300" selected>300 dpi</option></select>
+      </span>
+      <span class="grow"></span>
+      <button class="btn accent" data-act="doPrint" data-i18n="print">طباعة / PDF</button>
+    </div>
+    <p class="hint" data-i18n="printTips">في نافذة الطباعة: الهوامش = بلا، المقياس = 100%، وفعّل رسومات الخلفية.</p>
+  </div>
 </dialog>
 
 <script src="vendor/JsBarcode.all.min.js"></script>
