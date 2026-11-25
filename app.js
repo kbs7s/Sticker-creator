@@ -1992,6 +1992,13 @@
   const scriptCache = {};
   function loadScript(src) {
     if (!scriptCache[src]) scriptCache[src] = new Promise((res, rej) => {
+      // The single-file build (tools/build-single.py) embeds libraries as <script type="text/plain" data-src="…">.
+      const embedded = document.querySelector(`script[type="text/plain"][data-src="${src}"]`);
+      if (embedded) {
+        try { const sc = document.createElement('script'); sc.textContent = embedded.textContent; document.head.append(sc); res(); }
+        catch (e) { delete scriptCache[src]; rej(e); }
+        return;
+      }
       const sc = h('script', { src }); sc.onload = res; sc.onerror = () => { delete scriptCache[src]; rej(new Error(src)); };
       document.head.append(sc);
     });

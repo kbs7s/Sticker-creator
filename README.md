@@ -49,12 +49,20 @@ A static web app for designing and printing A4 sheets of multiple stickers/label
 
 الرابط: `https://<username>.github.io/Sticker-creator/`
 
+## نسخة محلية بملف واحد / Single-file local copy
+```bash
+python3 tools/build-single.py    # -> dist/sticker-creator.html (~3 MB)
+```
+ملف HTML واحد يحتوي كل شيء (الخطوط، المكتبات، مكتبة الأوراق، الأيقونات). افتحه بنقرة مزدوجة — يعمل بدون إنترنت وبدون خادم.
+One HTML file with everything inlined; open it with a double-click, no internet or server needed.
+
 ## التطوير / Development
 ```bash
 npm install
 npm run serve            # http://localhost:8080
 npx playwright test      # end-to-end tests
 python3 tools/build-sw.py   # after changing files: refresh the offline cache list
+python3 tools/build-single.py  # single-file copy in dist/
 ```
 
 ## نصائح الطباعة / Printing tips
