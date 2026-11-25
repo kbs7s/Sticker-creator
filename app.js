@@ -84,6 +84,31 @@
       multiHint: 'Shift/Ctrl + نقر لتحديد عدة عناصر، أو اسحب مربعاً حولها. Ctrl+A لتحديد الكل.',
       adjust: 'تعديل الصورة', brightness: 'السطوع %', contrast: 'التباين %', grayscale: 'رمادي', bw: 'أبيض وأسود', flipH: 'قلب ↔', flipV: 'قلب ↕',
       exporting: 'جارٍ التصدير…', exported: 'تم تصدير الصور', loadFail: 'تعذّر تحميل المكتبة',
+      elArc: 'نص دائري', elIcon: 'أيقونة', uploadFont: 'رفع خط من جهازك (TTF/OTF/WOFF)', fontAdded: 'تمت إضافة الخط', fontBad: 'ملف خط غير صالح',
+      richText: 'تنسيق مختلط داخل النص', richHint: '**عريض**  *مائل*  __تسطير__  [color=#e00]ملون[/color]  [size=16]كبير[/size]  [bg=#ff0]تظليل[/bg]  [font=Amiri]خط[/font]',
+      editImage: 'تحرير الصورة (قص، تدوير، إزالة الخلفية)', arcSide: 'موضع النص', arcTop: 'أعلى الدائرة', arcBottom: 'أسفل الدائرة',
+      inset: 'البعد عن الحافة (مم)', rotateText: 'تدوير النص°', lineW: 'سماكة الخط', arcDefault: 'نص دائري • اكتب هنا',
+      myLayouts: 'تقسيماتي المحفوظة', saveLayout: 'حفظ التقسيم الحالي…', deleteLayout: 'حذف تقسيم محفوظ…', layoutName: 'اسم التقسيم:',
+      deleteLayoutPrompt: 'اكتب اسم التقسيم المراد حذفه:', templateName: 'اسم القالب:', saveAsTemplate: 'حفظ التصميم الحالي كقالب',
+      myTemplates: 'قوالبي', builtinTemplates: 'القوالب الجاهزة', labelNo: 'الملصق رقم', noEditable: 'لا توجد نصوص قابلة للتعديل في هذا التصميم.',
+      resetLabel: 'إرجاع للأصل', cancel: 'إلغاء', editedLabels: 'ملصقات معدّلة يدوياً', edited: 'معدّل يدوياً',
+      barcodeHint: 'رقم التحقق يُحسب تلقائياً لـ EAN13 (12 رقماً) وEAN8 (7) وUPC (11). أنواع 2D/GS1 تُحمَّل عند الحاجة.',
+      linkOpened: 'تم فتح التصميم من الرابط', clickAction: 'عند النقر على ملصق:', clickSkip: 'تخطي', clickEdit: 'تعديل نصه', clearEdits: 'مسح التعديلات',
+      imgEditor: 'تحرير الصورة', crop: 'قص التحديد', rotate90: 'تدوير 90°', flip: 'قلب', trim: 'قص الحواف الفارغة', removeBg: 'إزالة الخلفية',
+      tolerance: 'درجة التسامح', reset: 'إرجاع', apply: 'تطبيق', cropHint: 'اسحب على الصورة لتحديد منطقة القص. إزالة الخلفية تعمل جيداً مع الشعارات ذات الخلفية الموحدة.',
+      share: 'مشاركة', shareTitle: 'رابط مشاركة التصميم', shareHint: 'التصميم محفوظ داخل الرابط نفسه — من يفتحه يحصل على نسخة منه. لا يُرفع أي شيء إلى خادم.',
+      copyLink: 'نسخ الرابط', linkCopied: 'تم نسخ الرابط', imagesStripped: 'أُزيلت الصور من الرابط لأنها كبيرة جداً — استخدم "تصدير ملف" لمشاركتها.',
+      openShared: 'فتح التصميم المشارَك؟ سيحل محل التصميم المفتوح حالياً (مشاريعك المحفوظة لن تتأثر).',
+      printLog: 'سجل الطباعة', clearLog: 'مسح السجل', exportCsv: 'تصدير CSV', noLog: 'لا توجد عمليات طباعة مسجلة بعد.',
+      logWhen: 'التاريخ', logProject: 'المشروع', logSheet: 'الورقة', logCount: 'العدد', logRange: 'الأرقام', logKind: 'النوع',
+      downloadPdf: 'تنزيل PDF', help: 'دليل سريع', next: 'التالي', prev: 'السابق', skipTour: 'تخطي', done: 'تم',
+      tour1: 'مرحباً! من هنا تختار ورقة الملصقات: مقاس جاهز، أو رقم المنتج من مكتبة الأوراق التجارية، أو قياس مخصص.',
+      tour2: 'أضف نصوصاً وباركود وQR وصوراً وأيقونات ونصاً دائرياً إلى الملصق.',
+      tour3: 'هذا هو المحرر: اسحب العناصر وغيّر حجمها. Shift + نقر لتحديد أكثر من عنصر.',
+      tour4: 'خصائص العنصر المحدد تظهر هنا: الخط، اللون، المحاذاة، الحجم…',
+      tour5: 'الترقيم التسلسلي ودمج البيانات من Excel أو CSV من هنا. استخدم {n} أو {اسم_العمود} داخل النصوص.',
+      tour6: 'معاينة كل الصفحات قبل الطباعة. يمكنك النقر على ملصق لتخطيه أو تعديل نصه.',
+      tour7: 'احفظ مشروعك، ثم اطبع أو نزّل PDF أو PNG بالقياس الدقيق.',
     },
     en: {
       appTitle: 'A4 Sticker Designer', new: 'New', templates: 'Templates', projects: 'My projects', save: 'Save',
@@ -152,17 +177,94 @@
       multiHint: 'Shift/Ctrl + click to select several elements, or drag a box around them. Ctrl+A selects all.',
       adjust: 'Image adjustments', brightness: 'Brightness %', contrast: 'Contrast %', grayscale: 'Grayscale', bw: 'Black & white', flipH: 'Flip ↔', flipV: 'Flip ↕',
       exporting: 'Exporting…', exported: 'Images exported', loadFail: 'Could not load the library',
+      elArc: 'Curved text', elIcon: 'Icon', uploadFont: 'Upload a font from your device (TTF/OTF/WOFF)', fontAdded: 'Font added', fontBad: 'Invalid font file',
+      richText: 'Mixed formatting inside text', richHint: '**bold**  *italic*  __underline__  [color=#e00]colour[/color]  [size=16]big[/size]  [bg=#ff0]highlight[/bg]  [font=Amiri]font[/font]',
+      editImage: 'Edit image (crop, rotate, remove background)', arcSide: 'Text position', arcTop: 'Top of circle', arcBottom: 'Bottom of circle',
+      inset: 'Distance from edge (mm)', rotateText: 'Rotate text°', lineW: 'Line weight', arcDefault: 'CURVED TEXT • TYPE HERE',
+      myLayouts: 'My saved layouts', saveLayout: 'Save current layout…', deleteLayout: 'Delete a saved layout…', layoutName: 'Layout name:',
+      deleteLayoutPrompt: 'Type the name of the layout to delete:', templateName: 'Template name:', saveAsTemplate: 'Save current design as template',
+      myTemplates: 'My templates', builtinTemplates: 'Built-in templates', labelNo: 'Label no.', noEditable: 'This design has no editable texts.',
+      resetLabel: 'Reset to original', cancel: 'Cancel', editedLabels: 'labels edited by hand', edited: 'Edited by hand',
+      barcodeHint: 'Check digit is added automatically for EAN13 (12 digits), EAN8 (7) and UPC (11). 2D/GS1 types load on demand.',
+      linkOpened: 'Design opened from link', clickAction: 'Clicking a label:', clickSkip: 'Skips it', clickEdit: 'Edits its text', clearEdits: 'Clear edits',
+      imgEditor: 'Edit image', crop: 'Crop selection', rotate90: 'Rotate 90°', flip: 'Flip', trim: 'Trim empty borders', removeBg: 'Remove background',
+      tolerance: 'Tolerance', reset: 'Reset', apply: 'Apply', cropHint: 'Drag on the image to select a crop area. Background removal works best on logos with a plain background.',
+      share: 'Share', shareTitle: 'Design share link', shareHint: 'The design is stored inside the link itself — whoever opens it gets a copy. Nothing is uploaded to a server.',
+      copyLink: 'Copy link', linkCopied: 'Link copied', imagesStripped: 'Images were removed from the link because they are too large — use "Export file" to share them.',
+      openShared: 'Open the shared design? It replaces the design currently open (your saved projects are not affected).',
+      printLog: 'Print history', clearLog: 'Clear history', exportCsv: 'Export CSV', noLog: 'No prints recorded yet.',
+      logWhen: 'Date', logProject: 'Project', logSheet: 'Sheet', logCount: 'Count', logRange: 'Numbers', logKind: 'Type',
+      downloadPdf: 'Download PDF', help: 'Quick guide', next: 'Next', prev: 'Back', skipTour: 'Skip', done: 'Done',
+      tour1: 'Welcome! Choose your label sheet here: a ready layout, a product code from the commercial sheet library, or a custom size.',
+      tour2: 'Add texts, barcodes, QR codes, images, icons and curved text to the label.',
+      tour3: 'This is the editor: drag and resize elements. Shift + click selects several.',
+      tour4: 'The selected element\'s properties appear here: font, colour, alignment, size…',
+      tour5: 'Serial numbering and Excel/CSV data merge live here. Use {n} or {column_name} inside texts.',
+      tour6: 'Preview every page before printing. Click a label to skip it or edit its text.',
+      tour7: 'Save your project, then print or download a PDF or PNG at the exact size.',
     },
   };
-  let lang = safeGet('lang') || 'ar';
+  let lang = (() => { try { return localStorage.getItem(STORE + 'lang'); } catch (e) { return null; } })() || 'ar';
   const t = (k) => (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
 
   /* ================= utils ================= */
-  function safeGet(k) { try { return localStorage.getItem(STORE + k); } catch (e) { return null; } }
+  /* Large data (projects, autosave, fonts, templates, logs) lives in IndexedDB, which allows hundreds of MB.
+   * Values are mirrored in memory after init() so reads stay synchronous. Small settings stay in localStorage. */
+  const BIG_KEYS = new Set(['autosave', 'projects', 'clipboard', 'userTemplates', 'userFonts', 'printLog']);
+  const KV = (() => {
+    const mem = new Map(); let db = null; let ready = false;
+    const lsGet = (k) => { try { return localStorage.getItem(STORE + k); } catch (e) { return null; } };
+    function openDb() {
+      return new Promise((res) => {
+        try {
+          const r = indexedDB.open('stickerCreator', 1);
+          r.onupgradeneeded = () => r.result.createObjectStore('kv');
+          r.onsuccess = () => res(r.result); r.onerror = () => res(null); r.onblocked = () => res(null);
+        } catch (e) { res(null); }
+      });
+    }
+    async function init() {
+      db = await openDb();
+      if (db) await new Promise((res) => {
+        try {
+          const req = db.transaction('kv').objectStore('kv').openCursor();
+          req.onsuccess = () => { const c = req.result; if (c) { mem.set(c.key, c.value); c.continue(); } else res(); };
+          req.onerror = () => res();
+        } catch (e) { res(); }
+      });
+      // one-time migration from localStorage
+      for (const k of BIG_KEYS) {
+        const v = lsGet(k);
+        if (v == null) continue;
+        if (!mem.has(k)) { mem.set(k, v); write(k, v); }
+        if (db) try { localStorage.removeItem(STORE + k); } catch (e) { /* ignore */ }
+      }
+      ready = true;
+      try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) { /* ignore */ }
+    }
+    function write(k, v) {
+      if (!db) { try { localStorage.setItem(STORE + k, v); return true; } catch (e) { toast(t('storageFull')); return false; } }
+      try {
+        const tx = db.transaction('kv', 'readwrite');
+        if (v == null) tx.objectStore('kv').delete(k); else tx.objectStore('kv').put(v, k);
+        tx.onerror = () => toast(t('storageFull'));
+        return true;
+      } catch (e) { toast(t('storageFull')); return false; }
+    }
+    return { init, get: (k) => (mem.has(k) ? mem.get(k) : null), set: (k, v) => { if (v == null) mem.delete(k); else mem.set(k, v); return write(k, v); },
+      get ready() { return ready; }, get usingIdb() { return !!db; } };
+  })();
+  function safeGet(k) {
+    if (BIG_KEYS.has(k) && KV.ready) return KV.get(k);
+    try { return localStorage.getItem(STORE + k); } catch (e) { return null; }
+  }
   function safeSet(k, v) {
+    if (BIG_KEYS.has(k) && KV.ready) return KV.set(k, v);
     try { localStorage.setItem(STORE + k, v); return true; }
     catch (e) { toast(t('storageFull')); return false; }
   }
+  const getJSON = (k, d) => { try { const v = safeGet(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } };
+  const setJSON = (k, v) => safeSet(k, JSON.stringify(v));
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const clone = (o) => JSON.parse(JSON.stringify(o));
@@ -215,18 +317,65 @@
 
   /* ================= model ================= */
   const PAGE_SIZES = { A4: [210, 297], A5: [148, 210], A3: [297, 420], Letter: [215.9, 279.4], Legal: [215.9, 355.6] };
-  const FONTS = ['Cairo', 'Tajawal', 'Amiri', 'Noto Kufi Arabic', 'Changa', 'Inter', 'Oswald', 'Roboto Mono', 'Arial', 'Times New Roman', 'Courier New'];
+  const BUILTIN_FONTS = ['Cairo', 'Tajawal', 'Amiri', 'Noto Kufi Arabic', 'Changa', 'Inter', 'Oswald', 'Roboto Mono', 'Arial', 'Times New Roman', 'Courier New'];
+  const FONTS = BUILTIN_FONTS.slice();
+  /* ---------- user fonts (stored in IndexedDB, registered with the FontFace API) ---------- */
+  const registeredFonts = new Set();
+  async function registerFont(name, dataUrl) {
+    if (registeredFonts.has(name)) return true;
+    try {
+      const ff = new FontFace(name, `url(${dataUrl})`);
+      await ff.load(); document.fonts.add(ff); registeredFonts.add(name);
+      if (!FONTS.includes(name)) FONTS.push(name);
+      return true;
+    } catch (e) { return false; }
+  }
+  async function loadUserFonts() {
+    const all = getJSON('userFonts', {});
+    await Promise.all(Object.entries(all).map(([n, d]) => registerFont(n, d)));
+  }
+  function uploadFont(cb) {
+    const inp = h('input', { type: 'file', accept: '.ttf,.otf,.woff,.woff2,font/*' });
+    inp.onchange = () => {
+      const f = inp.files[0]; if (!f) return;
+      const name = f.name.replace(/\.(ttf|otf|woff2?)$/i, '').replace(/[-_]+/g, ' ').trim() || 'Custom';
+      const r = new FileReader();
+      r.onload = async () => {
+        if (!(await registerFont(name, r.result))) { toast(t('fontBad')); return; }
+        const all = getJSON('userFonts', {}); all[name] = r.result; setJSON('userFonts', all);
+        toast(t('fontAdded') + ': ' + name); cb && cb(name);
+      };
+      r.readAsDataURL(f);
+    };
+    inp.click();
+  }
+  function fontsUsedBy(st) {
+    const user = getJSON('userFonts', {}); const out = {};
+    for (const e of st.label.elements) if (e.font && user[e.font]) out[e.font] = user[e.font];
+    return out;
+  }
+  async function importFonts(map) {
+    if (!map || typeof map !== 'object') return;
+    const all = getJSON('userFonts', {});
+    for (const [n, d] of Object.entries(map)) if (typeof d === 'string' && d.startsWith('data:')) { all[n] = d; await registerFont(n, d); }
+    setJSON('userFonts', all);
+  }
   const BARCODE_FORMATS = ['CODE128', 'CODE39', 'EAN13', 'EAN8', 'UPC', 'ITF14', 'ITF', 'MSI', 'codabar', 'pharmacode'];
+  // 2D / GS1 symbologies rendered with bwip-js (loaded on demand)
+  const BWIP_FORMATS = { DATAMATRIX: 'datamatrix', GS1DATAMATRIX: 'gs1datamatrix', PDF417: 'pdf417', 'GS1-128': 'gs1-128', AZTEC: 'azteccode', GS1QR: 'gs1qrcode' };
+  const TWO_D = new Set(['DATAMATRIX', 'GS1DATAMATRIX', 'PDF417', 'AZTEC', 'GS1QR']);
 
   const ELEMENT_DEFAULTS = {
     text: { w: 40, h: 10, text: '', font: 'Cairo', size: 12, color: '#000000', bold: false, italic: false, underline: false,
-      align: 'center', valign: 'middle', lineHeight: 1.2, letter: 0, bg: '', pad: 0, fit: false },
+      align: 'center', valign: 'middle', lineHeight: 1.2, letter: 0, bg: '', pad: 0, fit: false, rich: false },
     barcode: { w: 45, h: 16, value: '{n}', format: 'CODE128', showText: true, textSize: 8, color: '#000000', bg: '' },
     qr: { w: 20, h: 20, value: 'https://example.com/{n}', ecc: 'M', color: '#000000', bg: '', quiet: 0 },
     image: { w: 20, h: 20, src: '', fitMode: 'contain', radius: 0, brightness: 100, contrast: 100, grayscale: false, bw: false, flipH: false, flipV: false },
     rect: { w: 30, h: 15, fill: '#fde8db', stroke: '#e8651d', strokeW: 0.3, radius: 1, dashed: false },
     ellipse: { w: 20, h: 20, fill: '#fde8db', stroke: '#e8651d', strokeW: 0.3, dashed: false },
     line: { w: 40, h: 2, stroke: '#000000', strokeW: 0.4, dashed: false },
+    arctext: { w: 40, h: 40, text: 'CIRCULAR • TEXT', font: 'Cairo', size: 10, color: '#000000', bold: true, side: 'top', inset: 1, startAngle: 0, letter: 0.3 },
+    icon: { w: 12, h: 12, icon: 'package', color: '#000000', strokeW: 2, fill: '' },
   };
   function makeEl(type, props) {
     return Object.assign({ id: uid(), type, x: 2, y: 2, rot: 0, opacity: 1, locked: false, name: '' }, clone(ELEMENT_DEFAULTS[type]), props || {});
@@ -241,7 +390,7 @@
       label: { bg: '#ffffff', bgImage: '', borderPreview: true, borderPrint: false, borderColor: '#9a9a9a', borderWidth: 0.2,
         designW: 70, designH: 37, elements: [] },
       data: { mode: 'copies', copies: 24, csv: '', csvCopies: 1, skip: 0, skipList: [],
-        serial: { start: 1, step: 1, pad: 0, prefix: '', suffix: '' }, lastPrinted: null },
+        serial: { start: 1, step: 1, pad: 0, prefix: '', suffix: '' }, lastPrinted: null, overrides: {} },
       print: { range: 'all', from: 1, to: 1, crop: false, mirror: false, remember: true },
     };
   }
@@ -488,8 +637,75 @@
     if (s.data.mode === 'csv') for (const hd of parseCSV(s.data.csv).headers) r[hd] = '{' + hd + '}';
     return r;
   }
+  /* ---------- template variables: {key}, {key+N}, {date+30}, {key|filter|filter:arg} ---------- */
+  const AR_DIGITS = '٠١٢٣٤٥٦٧٨٩', FA_DIGITS = '۰۱۲۳۴۵۶۷۸۹';
+  const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+  function gs1Check(digits) {
+    let sum = 0;
+    for (let i = digits.length - 1, w = 3; i >= 0; i--, w = 4 - w) sum += +digits[i] * w;
+    return String((10 - (sum % 10)) % 10);
+  }
+  function addToNumberInString(v, delta) {
+    const str = String(v); const m = str.match(/(\d+)(?!.*\d)/);
+    if (!m) { const n = parseFloat(str); return isNaN(n) ? str : String(round(n + delta, 6)); }
+    const num = +m[1] + delta; const neg = num < 0;
+    const body = String(Math.abs(num)).padStart(m[1].length, '0');
+    return str.slice(0, m.index) + (neg ? '-' : '') + body + str.slice(m.index + m[1].length);
+  }
+  function evalExpr(expr, rec) {
+    if (has(rec, expr)) return rec[expr];
+    const m = /^(.+?)\s*([+-])\s*(\d+(?:\.\d+)?)$/.exec(expr);
+    if (!m || !has(rec, m[1].trim())) return undefined;
+    const key = m[1].trim(), delta = (m[2] === '-' ? -1 : 1) * +m[3];
+    if (key === 'date' || key === 'hijri') {
+      const d = new Date(); d.setDate(d.getDate() + delta);
+      if (key === 'date') return d.toLocaleDateString(lang === 'ar' ? 'ar-IQ' : 'en-GB');
+      try { return new Intl.DateTimeFormat((lang === 'ar' ? 'ar' : 'en') + '-u-ca-islamic-umalqura', { day: 'numeric', month: 'long', year: 'numeric' }).format(d); } catch (e) { return ''; }
+    }
+    return addToNumberInString(rec[key], delta);
+  }
+  function applyFilter(v, f) {
+    const raw = f.trim(); v = v == null ? '' : String(v);
+    if (/^[#0,]*0[#0]*(\.[0#]+)?$/.test(raw)) { // number pattern, e.g. 0.00  #,##0  000
+      const n = parseFloat(v.replace(/[^\d.\-]/g, '')); if (isNaN(n)) return v;
+      const dec = (raw.split('.')[1] || '').length, intZeros = (raw.split('.')[0].match(/0/g) || []).length;
+      let out = n.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec, useGrouping: raw.includes(',') });
+      const [ip, fp] = out.split('.'); const sign = ip.startsWith('-') ? '-' : '';
+      out = sign + ip.replace('-', '').padStart(intZeros, '0') + (fp != null ? '.' + fp : '');
+      return out;
+    }
+    const i = raw.indexOf(':'); const name = (i < 0 ? raw : raw.slice(0, i)).toLowerCase(); const arg = i < 0 ? '' : raw.slice(i + 1);
+    switch (name) {
+      case 'upper': return v.toUpperCase();
+      case 'lower': return v.toLowerCase();
+      case 'title': return v.replace(/\S+/g, (w) => w[0].toUpperCase() + w.slice(1).toLowerCase());
+      case 'trim': return v.trim();
+      case 'ar': return v.replace(/[0-9]/g, (d) => AR_DIGITS[d]);
+      case 'fa': return v.replace(/[0-9]/g, (d) => FA_DIGITS[d]);
+      case 'en': return v.replace(/[٠-٩]/g, (d) => AR_DIGITS.indexOf(d)).replace(/[۰-۹]/g, (d) => FA_DIGITS.indexOf(d));
+      case 'pad': return v.padStart(+arg || 0, '0');
+      case 'first': case 'left': return v.slice(0, +arg || 0);
+      case 'last': case 'right': return +arg ? v.slice(-arg) : '';
+      case 'default': return v.trim() ? v : arg;
+      case 'prefix': return v ? arg + v : '';
+      case 'suffix': return v ? v + arg : '';
+      case 'replace': { const j = arg.indexOf('='); return j < 0 ? v : v.split(arg.slice(0, j)).join(arg.slice(j + 1)); }
+      case 'ean': case 'check': { const d = v.replace(/\D/g, ''); return d ? d + gs1Check(d) : v; }
+      case 'money': case 'currency': {
+        const n = parseFloat(v.replace(/[^\d.\-]/g, '')); if (isNaN(n)) return v;
+        try { return n.toLocaleString(lang === 'ar' ? 'ar-IQ' : 'en-US', arg ? { style: 'currency', currency: arg.toUpperCase() } : { maximumFractionDigits: 2 }); } catch (e) { return String(n); }
+      }
+      default: return v;
+    }
+  }
   function fillTpl(str, rec) {
-    return String(str == null ? '' : str).replace(/\{([^{}]+)\}/g, (m, k) => (Object.prototype.hasOwnProperty.call(rec, k.trim()) ? rec[k.trim()] : m));
+    return String(str == null ? '' : str).replace(/\{([^{}]+)\}/g, (m, inner) => {
+      const parts = inner.split('|');
+      let v = evalExpr(parts[0].trim(), rec);
+      if (v === undefined) return m;
+      for (const f of parts.slice(1)) v = applyFilter(v, f);
+      return v;
+    });
   }
   function skipSet(s, per) {
     const set = new Set();
@@ -516,9 +732,30 @@
 
   /* ================= rendering: elements ================= */
   const barcodeCache = new Map();
+  let bwipLoading = false;
+  function bwipSVG(e, value) {
+    if (!window.bwipjs) {
+      if (!bwipLoading) {
+        bwipLoading = true;
+        loadScript('vendor/bwip-js-min.js').then(() => { barcodeCache.clear(); renderEditor(); scheduleSheet(); }).catch(() => toast(t('loadFail')));
+      }
+      return '<svg viewBox="0 0 10 4"><text x="5" y="2.5" font-size="1.4" text-anchor="middle" fill="#999">…</text></svg>';
+    }
+    const opts = { bcid: BWIP_FORMATS[e.format], text: value, barcolor: e.color.replace('#', ''), paddingwidth: 0, paddingheight: 0 };
+    if (!TWO_D.has(e.format)) { opts.includetext = !!e.showText; opts.textxalign = 'center'; opts.height = Math.max(4, e.h * 0.8); opts.textsize = +e.textSize || 8; }
+    let svg = window.bwipjs.toSVG(opts);
+    svg = svg.replace('<svg ', '<svg preserveAspectRatio="xMidYMid meet" ').replace(/ width="[\d.]+"/, '').replace(/ height="[\d.]+"/, '');
+    return svg;
+  }
   function barcodeSVG(e, value) {
     const key = [value, e.format, e.showText, e.textSize, e.color, round(e.w, 1), round(e.h, 1)].join('|');
     if (barcodeCache.has(key)) return barcodeCache.get(key);
+    if (BWIP_FORMATS[e.format]) {
+      let out = null;
+      try { out = bwipSVG(e, value); } catch (err) { out = null; }
+      if (window.bwipjs) barcodeCache.set(key, out);
+      return out;
+    }
     let out = null;
     try {
       const opts = { format: e.format, displayValue: !!e.showText, margin: 0, width: 2, height: 50, lineColor: e.color,
@@ -564,8 +801,25 @@
   // Off-screen measurer for "shrink to fit" text.
   let measurer;
   const fitCache = new Map();
+  /* Lightweight markup for mixed styles inside one text box:
+   * **bold**  *italic*  __underline__  [color=#e00]…[/color]  [size=14]…[/size]  [bg=#ff0]…[/bg]  [font=Amiri]…[/font] */
+  const escHtml = (str) => String(str).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const safeColor = (c) => (/^(#[0-9a-f]{3,8}|[a-z]{3,20})$/i.test(c) ? c : 'inherit');
+  function richHTML(text) {
+    let x = escHtml(text);
+    x = x.replace(/\*\*([\s\S]+?)\*\*/g, '<b>$1</b>')
+      .replace(/__([\s\S]+?)__/g, '<u>$1</u>')
+      .replace(/(^|[^*])\*([^*\n]+?)\*/g, '$1<i>$2</i>');
+    for (let i = 0; i < 4; i++) { // allow some nesting
+      x = x.replace(/\[color=([^\]]+)\]([\s\S]*?)\[\/color\]/g, (m, c, b) => `<span style="color:${safeColor(c)}">${b}</span>`)
+        .replace(/\[bg=([^\]]+)\]([\s\S]*?)\[\/bg\]/g, (m, c, b) => `<span style="background:${safeColor(c)}">${b}</span>`)
+        .replace(/\[size=([\d.]+)\]([\s\S]*?)\[\/size\]/g, (m, n, b) => `<span style="font-size:${clamp(+n, 2, 300)}pt">${b}</span>`)
+        .replace(/\[font=([^\]]+)\]([\s\S]*?)\[\/font\]/g, (m, f, b) => `<span style="font-family:'${f.replace(/['"<>;]/g, '')}',sans-serif">${b}</span>`);
+    }
+    return x;
+  }
   function fittedSize(e, text) {
-    const key = [text, e.font, e.size, e.bold, e.italic, e.letter, e.lineHeight, e.pad, round(e.w, 1), round(e.h, 1)].join('|');
+    const key = [e.rich ? 'R' : '', text, e.font, e.size, e.bold, e.italic, e.letter, e.lineHeight, e.pad, round(e.w, 1), round(e.h, 1)].join('|');
     if (fitCache.has(key)) return fitCache.get(key);
     if (!measurer) {
       measurer = h('div', { style: 'position:fixed;left:-9999px;top:0;visibility:hidden;pointer-events:none;' });
@@ -573,6 +827,7 @@
     }
     const box = h('div', { style: `width:${e.w}mm;height:${e.h}mm;padding:${e.pad || 0}mm;box-sizing:border-box;overflow:hidden;` });
     const inner = h('div', { style: `white-space:pre-wrap;word-break:break-word;font-family:'${e.font}',sans-serif;font-weight:${e.bold ? 700 : 400};font-style:${e.italic ? 'italic' : 'normal'};line-height:${e.lineHeight};letter-spacing:${e.letter || 0}mm;` }, text);
+    if (e.rich) inner.innerHTML = richHTML(text);
     box.append(inner); measurer.append(box);
     let size = +e.size;
     while (size > 3) {
@@ -597,7 +852,8 @@
         const text = fillTpl(e.text, rec);
         const size = e.fit ? fittedSize(e, text) : +e.size;
         const jc = { top: 'flex-start', middle: 'center', bottom: 'flex-end' }[e.valign] || 'center';
-        const txt = h('div', { class: 'txt', dir: 'auto' }, text);
+        const txt = h('div', { class: 'txt', dir: 'auto' }, e.rich ? null : text);
+        if (e.rich) { const inner = h('div'); inner.innerHTML = richHTML(text); txt.append(inner); }
         txt.style.cssText = `font-family:'${e.font}',sans-serif;font-size:${size}pt;color:${e.color};font-weight:${e.bold ? 700 : 400};`
           + `font-style:${e.italic ? 'italic' : 'normal'};text-decoration:${e.underline ? 'underline' : 'none'};text-align:${e.align};`
           + `justify-content:${jc};line-height:${e.lineHeight};letter-spacing:${e.letter || 0}mm;padding:${e.pad || 0}mm;`
@@ -646,6 +902,23 @@
         node.append(bar);
         break;
       }
+      case 'arctext': {
+        const text = fillTpl(e.text, rec);
+        const sizeMm = (+e.size || 10) * 0.3528, R = Math.min(e.w, e.h) / 2, cx = e.w / 2, cy = e.h / 2;
+        const top = e.side !== 'bottom';
+        const r = Math.max(1, R - (+e.inset || 0) - (top ? sizeMm * 0.75 : sizeMm * 0.25));
+        const pid = `arc_${e.id}_${top ? 't' : 'b'}_${String(round(r, 2)).replace('.', '_')}_${String(round(cx, 2)).replace('.', '_')}`;
+        const d = top ? `M ${cx - r} ${cy} A ${r} ${r} 0 0 1 ${cx + r} ${cy}` : `M ${cx - r} ${cy} A ${r} ${r} 0 0 0 ${cx + r} ${cy}`;
+        node.innerHTML = `<svg viewBox="0 0 ${e.w} ${e.h}" overflow="visible"><defs><path id="${pid}" d="${d}"/></defs>`
+          + `<g transform="rotate(${+e.startAngle || 0} ${cx} ${cy})"><text font-family="'${escHtml(e.font)}',sans-serif" font-size="${sizeMm}" font-weight="${e.bold ? 700 : 400}" fill="${safeColor(e.color)}" letter-spacing="${+e.letter || 0}">`
+          + `<textPath href="#${pid}" startOffset="50%" text-anchor="middle">${escHtml(text)}</textPath></text></g></svg>`;
+        break;
+      }
+      case 'icon': {
+        const body = (window.ICONS && window.ICONS[e.icon]) || '<rect x="4" y="4" width="16" height="16" rx="2"/>';
+        node.innerHTML = `<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="${e.fill ? safeColor(e.fill) : 'none'}" stroke="${safeColor(e.color)}" stroke-width="${+e.strokeW || 2}" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
+        break;
+      }
     }
     return node;
   }
@@ -655,7 +928,9 @@
     const node = h('div', { class: 'label' });
     node.style.cssText = `width:${L.w}mm;height:${L.h}mm;border-radius:${L.radius}mm;background-color:${lab.bg || '#fff'};`;
     if (lab.bgImage) node.style.backgroundImage = `url("${lab.bgImage}")`, node.style.backgroundSize = 'cover', node.style.backgroundPosition = 'center';
-    if (rec) for (const e of lab.elements) node.append(renderElement(e, rec));
+    const ov = rec && rec._idx != null && s.data.overrides ? s.data.overrides[rec._idx] : null;
+    if (rec) for (const e of lab.elements) node.append(renderElement(ov && ov[e.id] ? Object.assign({}, e, ov[e.id]) : e, rec));
+    if (ov && mode === 'preview' && Object.keys(ov).length) node.append(h('div', { class: 'ov-dot', title: t('edited') }));
     const showBorder = mode === 'test' ? true : mode === 'print' ? lab.borderPrint : (lab.borderPreview || lab.borderPrint);
     if (showBorder) {
       const o = h('div', { class: 'outline' });
@@ -682,6 +957,8 @@
       const lab = renderLabel(s, L, mode === 'test' ? null : slot.rec || (slot.skip || slot.empty ? null : {}), mode);
       lab.style.left = p.x + 'mm'; lab.style.top = p.y + 'mm';
       lab.dataset.k = slot.k;
+      if (slot.rec) lab.dataset.idx = slot.rec._idx;
+      lab.dataset.p = slot.page != null ? slot.page : '';
       if (!printing && slot.skip) lab.classList.add('skipped');
       if (!printing && slot.empty) lab.classList.add('empty');
       content.append(lab);
@@ -714,14 +991,18 @@
       const page = renderPage(state, L, pg, 'preview');
       page.style.transform = `scale(${scale})`;
       const scaler = h('div', { class: 'page-scaler', style: `width:${L.P.w * MM * scale}px;height:${L.P.h * MM * scale}px` }, page);
-      if (i === 0) page.addEventListener('click', onPreviewClick);
+      page.dataset.page = i;
+      page.addEventListener('click', onPreviewClick);
       host.append(h('div', { class: 'page-wrap' }, h('span', { class: 'page-num' }, `${t('page')} ${i + 1} / ${pages.length}`), scaler));
     });
     if (pages.length > MAX_PREVIEW_PAGES) host.append(h('div', { class: 'info' }, `+${pages.length - MAX_PREVIEW_PAGES} ${t('morePages')}`));
     $('#previewInfo').textContent = `${total} ${t('labelsTotal')} · ${pages.length} ${t('pages')}`;
   }
+  let previewMode = 'skip';
   function onPreviewClick(ev) {
     const lab = ev.target.closest('.label'); if (!lab) return;
+    if (previewMode === 'edit') { if (lab.dataset.idx) openLabelEditor(+lab.dataset.idx); return; }
+    if (ev.currentTarget.dataset.page !== '0') return;
     const k = +lab.dataset.k;
     if (k < (+state.data.skip || 0)) { toast(t('skipFromNumber')); return; }
     const list = state.data.skipList || (state.data.skipList = []);
@@ -934,9 +1215,10 @@
     const L = computeLayout(state);
     const def = ELEMENT_DEFAULTS[type];
     let w = Math.min(def.w, L.w * 0.8), hh = Math.min(def.h, L.h * 0.8);
-    if (type === 'qr') w = hh = Math.min(def.w, L.w * 0.8, L.h * 0.8);
+    if (type === 'qr' || type === 'icon') w = hh = Math.min(def.w, L.w * 0.8, L.h * 0.8);
     const e = makeEl(type, { w: round(w), h: round(hh), x: round((L.w - w) / 2), y: round((L.h - hh) / 2) });
     if (type === 'text') e.text = t('defaultText');
+    if (type === 'arctext') { const m = Math.min(L.w, L.h) * 0.9; Object.assign(e, { w: round(m), h: round(m), x: round((L.w - m) / 2), y: round((L.h - m) / 2), text: t('arcDefault') }); }
     state.label.elements.push(e);
     selSetIds([e.id]);
     afterDesignChange(true);
@@ -1099,12 +1381,23 @@
     if (opts.full) { commit(); if (opts.rebuild) renderInspector(); } else scheduleCommit();
   }
 
+  const TYPE_KEYS = { text: 'Text', barcode: 'Barcode', qr: 'Qr', image: 'Image', rect: 'Rect', ellipse: 'Ellipse', line: 'Line', arctext: 'Arc', icon: 'Icon' };
+  const typeLabel = (e) => t('el' + (TYPE_KEYS[e.type] || 'Text'));
+  function fontField(obj, key, opts = {}) {
+    const f = selectField(obj, key, t('font'), FONTS, Object.assign({ cls: 'span2' }, opts));
+    const sel = $('select', f);
+    const row = h('div', { class: 'row', style: 'margin:0' });
+    sel.replaceWith(row); row.append(sel,
+      h('button', { class: 'btn small', type: 'button', title: t('uploadFont'), onclick: (ev) => { ev.preventDefault(); uploadFont((name) => { obj[key] = name; onPropChange({ full: true }); renderInspector(); }); } }, '＋'));
+    sel.style.fontFamily = `'${obj[key]}',sans-serif`;
+    return f;
+  }
   function renderInspector() {
     const box = $('#inspector'); box.innerHTML = '';
     if (selSet.size > 1) return renderMultiInspector(box);
     const e = findEl(selectedId);
     if (!e) return renderLabelInspector(box);
-    const typeName = t('el' + { text: 'Text', barcode: 'Barcode', qr: 'Qr', image: 'Image', rect: 'Rect', ellipse: 'Ellipse', line: 'Line' }[e.type]);
+    const typeName = typeLabel(e);
     box.append(h('div', { class: 'insp-title' }, h('h2', null, typeName),
       h('button', { class: 'btn small', onclick: () => { selSetIds([]); renderEditor(); renderInspector(); renderLayers(); } }, '✕')));
     box.append(h('div', { class: 'insp-actions' },
@@ -1121,7 +1414,7 @@
       case 'text':
         g.append(textField(e, 'text', t('text'), { multi: true }));
         g.append(varChipsRow());
-        g.append(selectField(e, 'font', t('font'), FONTS, { cls: 'span2' }));
+        g.append(fontField(e, 'font'));
         g.append(numField(e, 'size', t('size'), { step: 0.5, min: 3 }));
         g.append(colorField(e, 'color', t('color')));
         g.append(h('div', { class: 'align-row span2' }, toggleBtn(e, 'bold', 'B ' + t('bold')), toggleBtn(e, 'italic', 'I ' + t('italic')), toggleBtn(e, 'underline', 'U ' + t('underline'))));
@@ -1132,11 +1425,14 @@
         g.append(numField(e, 'pad', t('padding'), { step: 0.5, min: 0 }));
         g.append(colorField(e, 'bg', t('background'), { none: true }));
         g.append(checkField(e, 'fit', t('fitText')));
+        g.append(checkField(e, 'rich', t('richText')));
+        if (e.rich) g.append(h('p', { class: 'hint span2 mono-hint' }, t('richHint')));
         break;
       case 'barcode':
         g.append(textField(e, 'value', t('value')));
         g.append(varChipsRow());
-        g.append(selectField(e, 'format', t('format'), BARCODE_FORMATS, { cls: 'span2' }));
+        g.append(selectField(e, 'format', t('format'), [...BARCODE_FORMATS, ...Object.keys(BWIP_FORMATS)].map((f) => [f, f + (BWIP_FORMATS[f] ? ' (2D/GS1)' : '')]), { cls: 'span2' }));
+        g.append(h('p', { class: 'hint span2' }, t('barcodeHint')));
         g.append(checkField(e, 'showText', t('showText')));
         g.append(numField(e, 'textSize', t('textSize'), { step: 0.5, min: 3 }));
         g.append(colorField(e, 'color', t('color')));
@@ -1154,6 +1450,7 @@
         g.append(h('div', { class: 'row span2' },
           h('button', { class: 'btn small', onclick: () => pickImage((src) => { e.src = src; afterDesignChange(true); }) }, t('choose')),
           e.src ? h('button', { class: 'btn small danger', onclick: () => { e.src = ''; afterDesignChange(true); } }, t('remove')) : null));
+        if (e.src) g.append(h('button', { class: 'btn small span2', onclick: () => openImageEditor(e) }, '✂ ' + t('editImage')));
         g.append(selectField(e, 'fitMode', t('fitMode'), [['contain', t('contain')], ['cover', t('cover')], ['stretch', t('stretch')]]));
         g.append(numField(e, 'radius', t('radius'), { step: 0.5, min: 0 }));
         g.append(h('h3', { class: 'span2', style: 'margin:10px 0 0' }, t('adjust')));
@@ -1174,6 +1471,32 @@
         g.append(numField(e, 'strokeW', t('strokeW'), { step: 0.1, min: 0.05 }));
         g.append(checkField(e, 'dashed', t('dashed')));
         break;
+      case 'arctext':
+        g.append(textField(e, 'text', t('text')));
+        g.append(varChipsRow());
+        g.append(fontField(e, 'font'));
+        g.append(numField(e, 'size', t('size'), { step: 0.5, min: 3 }));
+        g.append(colorField(e, 'color', t('color')));
+        g.append(segField(e, 'side', t('arcSide'), [['top', t('arcTop')], ['bottom', t('arcBottom')]], { full: true }));
+        g.append(numField(e, 'inset', t('inset'), { step: 0.5 }));
+        g.append(numField(e, 'startAngle', t('rotateText'), { step: 5 }));
+        g.append(numField(e, 'letter', t('letter'), { step: 0.1 }));
+        g.append(h('div', { class: 'align-row' }, toggleBtn(e, 'bold', 'B ' + t('bold'))));
+        break;
+      case 'icon': {
+        const grid = h('div', { class: 'icon-grid span2' });
+        for (const [name, body] of Object.entries(window.ICONS || {})) {
+          const b = h('button', { class: 'icon-btn' + (e.icon === name ? ' on' : ''), type: 'button', title: name });
+          b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
+          b.addEventListener('click', () => { e.icon = name; $$('.icon-btn', grid).forEach((x) => x.classList.toggle('on', x === b)); onPropChange({ full: true }); renderLayers(); });
+          grid.append(b);
+        }
+        g.append(grid);
+        g.append(colorField(e, 'color', t('color')));
+        g.append(numField(e, 'strokeW', t('lineW'), { step: 0.25, min: 0.25, max: 4 }));
+        g.append(colorField(e, 'fill', t('fill'), { none: true, cls: 'span2' }));
+        break;
+      }
     }
 
     // geometry
@@ -1224,7 +1547,7 @@
       const proxy = { font: texts[0].font, size: texts[0].size, color: texts[0].color };
       const apply = (k) => () => { texts.forEach((x) => { x[k] = proxy[k]; }); onPropChange({}); };
       const wrapChange = (el, k) => { el.addEventListener('input', apply(k)); el.addEventListener('change', apply(k)); return el; };
-      g.append(wrapChange(selectField(proxy, 'font', t('font'), FONTS, { cls: 'span2' }), 'font'));
+      g.append(wrapChange(fontField(proxy, 'font'), 'font'));
       g.append(wrapChange(numField(proxy, 'size', t('size'), { step: 0.5, min: 3 }), 'size'));
       g.append(wrapChange(colorField(proxy, 'color', t('color')), 'color'));
     }
@@ -1272,11 +1595,11 @@
 
   function renderLayers() {
     const ul = $('#layers'); ul.innerHTML = '';
-    const typeLbl = { text: 'Text', barcode: 'Barcode', qr: 'Qr', image: 'Image', rect: 'Rect', ellipse: 'Ellipse', line: 'Line' };
+    const typeLbl = TYPE_KEYS;
     [...state.label.elements].reverse().forEach((e) => {
-      const nm = e.name || (e.type === 'text' ? e.text : e.type === 'barcode' || e.type === 'qr' ? e.value : '') || t('el' + typeLbl[e.type]);
+      const nm = e.name || (e.type === 'text' || e.type === 'arctext' ? e.text : e.type === 'barcode' || e.type === 'qr' ? e.value : e.type === 'icon' ? e.icon : '') || typeLabel(e);
       const li = h('li', { class: selSet.has(e.id) ? 'sel' : '' },
-        h('span', { class: 'ltype' }, t('el' + typeLbl[e.type])),
+        h('span', { class: 'ltype' }, typeLabel(e)),
         h('span', { class: 'lname', dir: 'auto' }, String(nm).split('\n')[0]),
         e.locked ? h('span', null, '🔒') : null);
       li.addEventListener('click', (ev) => {
@@ -1380,8 +1703,33 @@
       const round_ = rad * 2 >= Math.min(w, hh) - 0.01;
       sel.append(h('option', { value: i }, `${c} × ${r} (${c * r}) — ${round_ ? 'Ø' + w : w + ' × ' + hh} mm`));
     });
+    const mine = getUserLayouts();
+    const grp = h('optgroup', { label: t('myLayouts') });
+    mine.forEach((u, i) => grp.append(h('option', { value: 'u:' + i }, u.name)));
+    grp.append(h('option', { value: 'save' }, '＋ ' + t('saveLayout')));
+    if (mine.length) grp.append(h('option', { value: 'del' }, '✕ ' + t('deleteLayout')));
+    sel.append(grp);
     sel.onchange = () => {
       if (sel.value === '') return;
+      if (sel.value === 'save') {
+        const L = computeLayout(state);
+        const name = prompt(t('layoutName'), state.layout.sheetRef || `${L.cols}×${L.rows} — ${round(L.w, 1)}×${round(L.h, 1)} mm`);
+        if (name) { mine.push({ name, page: clone(state.page), layout: clone(state.layout) }); safeSet('userLayouts', JSON.stringify(mine)); toast(t('saved')); }
+        renderPresets(); return;
+      }
+      if (sel.value === 'del') {
+        const name = prompt(t('deleteLayoutPrompt') + '\n' + mine.map((u) => '• ' + u.name).join('\n'));
+        const i = mine.findIndex((u) => u.name === name);
+        if (i >= 0) { mine.splice(i, 1); safeSet('userLayouts', JSON.stringify(mine)); }
+        renderPresets(); return;
+      }
+      if (sel.value.startsWith('u:')) {
+        const u = mine[+sel.value.slice(2)]; if (!u) return;
+        Object.assign(state.page, clone(u.page)); Object.assign(state.layout, clone(u.layout));
+        state.data.skipList = [];
+        normalizeDesign(state); zoomAuto = true;
+        const keep = sel.value; renderAll(); commit(); sel.value = keep; return;
+      }
       const [c, r, w, hh, gx, gy, rad] = PRESETS[+sel.value];
       Object.assign(state.page, { size: 'A4', orientation: 'portrait' });
       Object.assign(state.layout, { cols: c, rows: r, labelW: w, labelH: hh, gapX: gx, gapY: gy, radius: rad, sizeMode: 'fixed', center: true });
@@ -1393,7 +1741,27 @@
     };
   }
 
+  function getUserLayouts() { try { const a = JSON.parse(safeGet('userLayouts') || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+
   /* ================= templates & projects ================= */
+  function tplCard(s, title, sub, onPick, onDelete) {
+    const L = computeLayout(s);
+    const sc = Math.min(170 / (L.w * MM), 110 / (L.h * MM));
+    const lab = renderLabel(s, L, sampleRecord(s), 'preview');
+    lab.style.position = 'relative'; lab.style.transform = `scale(${sc})`; lab.style.transformOrigin = '0 0';
+    lab.style.boxShadow = '0 1px 4px rgba(0,0,0,.2)';
+    const holder = h('div', { class: 'tpl-holder', style: `width:${L.w * MM * sc}px;height:${L.h * MM * sc}px` }, lab);
+    const card = h('div', { class: 'tpl', role: 'button', tabindex: '0' }, h('div', { class: 'thumb' }, holder),
+      h('strong', { dir: 'auto' }, title), h('small', null, sub));
+    card.addEventListener('click', onPick);
+    card.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') onPick(); });
+    if (onDelete) {
+      const del = h('button', { class: 'btn small danger tpl-del', type: 'button', title: t('delete') }, '✕');
+      del.addEventListener('click', (ev) => { ev.stopPropagation(); onDelete(); });
+      card.append(del);
+    }
+    return card;
+  }
   function isDirty() { return state.id ? snapshot() !== lastSavedSnap : state.label.elements.length > 0 && history.length > 1; }
   function newFromState(s) {
     state = s; state.id = null; selSetIds([]); lastSavedSnap = null; zoomAuto = true;
@@ -1401,23 +1769,157 @@
   }
   function openTemplates() {
     const grid = $('#templateGrid'); grid.innerHTML = '';
-    for (const tp of TEMPLATES) {
-      const s = tp.make(); const L = computeLayout(s);
-      const sc = Math.min(170 / (L.w * MM), 110 / (L.h * MM));
-      const lab = renderLabel(s, L, sampleRecord(s), 'preview');
-      lab.style.position = 'relative'; lab.style.transform = `scale(${sc})`; lab.style.transformOrigin = '0 0';
-      lab.style.boxShadow = '0 1px 4px rgba(0,0,0,.2)';
-      const holder = h('div', { class: 'tpl-holder', style: `width:${L.w * MM * sc}px;height:${L.h * MM * sc}px` }, lab);
-      const card = h('button', { class: 'tpl', type: 'button' }, h('div', { class: 'thumb' }, holder),
-        h('strong', null, t('tpl' + tp.key)), h('small', null, t('tpl' + tp.key + 'D')));
-      card.addEventListener('click', () => {
-        if (isDirty() && !confirm(t('confirmNew'))) return;
-        $('#templatesDlg').close(); newFromState(tp.make());
-      });
-      grid.append(card);
+    const pick = (make) => () => { if (isDirty() && !confirm(t('confirmNew'))) return; $('#templatesDlg').close(); newFromState(make()); };
+    grid.append(h('div', { class: 'tpl-bar' },
+      h('button', { class: 'btn primary', type: 'button', onclick: () => {
+        const name = prompt(t('templateName'), state.name || ''); if (!name) return;
+        const all = getJSON('userTemplates', {}); const id = uid() + uid();
+        const st = clone(state); st.id = null; st.data.lastPrinted = null;
+        all[id] = { id, name, at: Date.now(), state: st };
+        setJSON('userTemplates', all); toast(t('saved')); openTemplates();
+      } }, '＋ ' + t('saveAsTemplate'))));
+    const mine = Object.values(getJSON('userTemplates', {})).sort((a, b) => b.at - a.at);
+    if (mine.length) {
+      grid.append(h('h3', { class: 'tpl-sec' }, t('myTemplates')));
+      for (const u of mine) {
+        const L = computeLayout(migrate(u.state));
+        grid.append(tplCard(migrate(u.state), u.name, `${L.cols}×${L.rows} — ${round(L.w, 1)}×${round(L.h, 1)} mm`,
+          pick(() => { const st = migrate(clone(u.state)); st.name = u.name; return st; }),
+          () => { if (!confirm(t('confirmDelete'))) return; const all = getJSON('userTemplates', {}); delete all[u.id]; setJSON('userTemplates', all); openTemplates(); }));
+      }
+      grid.append(h('h3', { class: 'tpl-sec' }, t('builtinTemplates')));
     }
-    $('#templatesDlg').showModal();
+    for (const tp of TEMPLATES) grid.append(tplCard(tp.make(), t('tpl' + tp.key), t('tpl' + tp.key + 'D'), pick(tp.make)));
+    if (!$('#templatesDlg').open) $('#templatesDlg').showModal();
   }
+
+  /* ================= per-label editing ================= */
+  function openLabelEditor(idx) {
+    const recs = getRecords(state); const rec = recs[idx]; if (!rec) return;
+    const ovs = state.data.overrides || (state.data.overrides = {});
+    const ov = ovs[idx] || {};
+    const body = $('#labelDlgBody'); body.innerHTML = '';
+    body.append(h('p', { class: 'hint' }, `${t('labelNo')} ${idx + 1}  ·  {n} = `, h('b', { dir: 'ltr' }, rec.n)));
+    const fields = [];
+    for (const e of state.label.elements) {
+      const key = e.type === 'text' || e.type === 'arctext' ? 'text' : e.type === 'barcode' || e.type === 'qr' ? 'value' : null;
+      if (!key) continue;
+      const ta = h('textarea', { rows: 2, dir: 'auto' });
+      ta.value = ov[e.id] && ov[e.id][key] != null ? ov[e.id][key] : e[key];
+      fields.push([e, key, ta]);
+      const preview = h('small', { class: 'hint', dir: 'auto' }, '→ ' + fillTpl(ta.value, rec));
+      ta.addEventListener('input', () => { preview.textContent = '→ ' + fillTpl(ta.value, rec); });
+      body.append(h('label', { class: 'full' }, h('span', null, `${typeLabel(e)} — ${e.name || String(e[key]).split('\n')[0].slice(0, 40)}`), ta, preview));
+    }
+    if (!fields.length) body.append(h('p', { class: 'empty-msg' }, t('noEditable')));
+    const close = () => $('#labelDlg').close();
+    body.append(h('div', { class: 'dlg-actions' },
+      h('button', { class: 'btn danger', type: 'button', onclick: () => { delete ovs[idx]; commit(); renderSheet(); close(); } }, t('resetLabel')),
+      h('span', { class: 'grow' }),
+      h('button', { class: 'btn', type: 'button', onclick: close }, t('cancel')),
+      h('button', { class: 'btn accent', type: 'button', onclick: () => {
+        const n = {};
+        for (const [e, key, ta] of fields) if (ta.value !== e[key]) n[e.id] = { [key]: ta.value };
+        if (Object.keys(n).length) ovs[idx] = n; else delete ovs[idx];
+        commit(); renderSheet(); updateEditedInfo(); close();
+      } }, t('save'))));
+    $('#labelDlg').showModal();
+  }
+  function updateEditedInfo() {
+    const n = Object.keys(state.data.overrides || {}).length;
+    const el = $('#editedInfo'); if (!el) return;
+    el.hidden = !n; el.querySelector('span').textContent = `${n} ${t('editedLabels')}`;
+  }
+
+  /* ================= image editor: crop, rotate, trim, remove background ================= */
+  let imgEd = null;
+  function cloneCanvas(src, w = src.width, hh = src.height, sx = 0, sy = 0) {
+    const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(w)); c.height = Math.max(1, Math.round(hh));
+    c.getContext('2d').drawImage(src, sx, sy, w, hh, 0, 0, c.width, c.height); return c;
+  }
+  function openImageEditor(e) {
+    const img = new Image();
+    img.onload = () => {
+      const c = document.createElement('canvas'); c.width = img.naturalWidth; c.height = img.naturalHeight;
+      c.getContext('2d').drawImage(img, 0, 0);
+      imgEd = { e, orig: c, work: cloneCanvas(c), crop: null };
+      $('#imgTol').value = 30; drawImgEd(); $('#imgDlg').showModal();
+    };
+    img.src = e.src;
+  }
+  function drawImgEd() {
+    const view = $('#imgCanvas'), w = imgEd.work;
+    const maxW = Math.min(560, window.innerWidth - 80), sc = Math.min(1, maxW / w.width, 360 / w.height);
+    view.width = Math.max(1, Math.round(w.width * sc)); view.height = Math.max(1, Math.round(w.height * sc)); imgEd.sc = sc;
+    const ctx = view.getContext('2d'); ctx.clearRect(0, 0, view.width, view.height); ctx.drawImage(w, 0, 0, view.width, view.height);
+    const c = imgEd.crop;
+    if (c && c.w > 1 && c.h > 1) {
+      ctx.fillStyle = 'rgba(0,0,0,.45)';
+      ctx.fillRect(0, 0, view.width, c.y * sc); ctx.fillRect(0, (c.y + c.h) * sc, view.width, view.height);
+      ctx.fillRect(0, c.y * sc, c.x * sc, c.h * sc); ctx.fillRect((c.x + c.w) * sc, c.y * sc, view.width, c.h * sc);
+      ctx.setLineDash([5, 4]); ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.strokeRect(c.x * sc, c.y * sc, c.w * sc, c.h * sc);
+    }
+    $('#imgSize').textContent = `${w.width} × ${w.height}px` + (c && c.w > 1 ? `  →  ${Math.round(c.w)} × ${Math.round(c.h)}px` : '');
+  }
+  function imgEdPointer() {
+    const view = $('#imgCanvas'); let start = null;
+    const pt = (ev) => { const r = view.getBoundingClientRect(); return { x: clamp((ev.clientX - r.left) / imgEd.sc, 0, imgEd.work.width), y: clamp((ev.clientY - r.top) / imgEd.sc, 0, imgEd.work.height) }; };
+    view.addEventListener('pointerdown', (ev) => { start = pt(ev); view.setPointerCapture(ev.pointerId); imgEd.crop = null; drawImgEd(); });
+    view.addEventListener('pointermove', (ev) => {
+      if (!start) return; const p = pt(ev);
+      imgEd.crop = { x: Math.min(start.x, p.x), y: Math.min(start.y, p.y), w: Math.abs(p.x - start.x), h: Math.abs(p.y - start.y) }; drawImgEd();
+    });
+    view.addEventListener('pointerup', () => { start = null; });
+  }
+  function bgColorAt(data, w, hh) {
+    const idx = [0, w - 1, (hh - 1) * w, hh * w - 1].map((i) => i * 4);
+    const best = idx.map((i) => [data[i], data[i + 1], data[i + 2], data[i + 3]]);
+    return best.sort((a, b) => b[3] - a[3])[0];
+  }
+  const colorDist = (d, i, c) => Math.abs(d[i] - c[0]) + Math.abs(d[i + 1] - c[1]) + Math.abs(d[i + 2] - c[2]);
+  const imgEdOps = {
+    rotate() {
+      const w = imgEd.work, c = document.createElement('canvas'); c.width = w.height; c.height = w.width;
+      const ctx = c.getContext('2d'); ctx.translate(c.width, 0); ctx.rotate(Math.PI / 2); ctx.drawImage(w, 0, 0);
+      imgEd.work = c; imgEd.crop = null;
+    },
+    flip() { const w = imgEd.work, c = cloneCanvas(w, w.width, w.height); const ctx = c.getContext('2d'); ctx.clearRect(0, 0, c.width, c.height); ctx.translate(c.width, 0); ctx.scale(-1, 1); ctx.drawImage(w, 0, 0); imgEd.work = c; },
+    crop() { const c = imgEd.crop; if (!c || c.w < 2 || c.h < 2) return; imgEd.work = cloneCanvas(imgEd.work, c.w, c.h, c.x, c.y); imgEd.crop = null; },
+    trim() {
+      const w = imgEd.work, ctx = w.getContext('2d'), { data } = ctx.getImageData(0, 0, w.width, w.height);
+      const bg = bgColorAt(data, w.width, w.height), tol = +$('#imgTol').value;
+      let x0 = w.width, y0 = w.height, x1 = -1, y1 = -1;
+      for (let y = 0; y < w.height; y++) for (let x = 0; x < w.width; x++) {
+        const i = (y * w.width + x) * 4;
+        if (data[i + 3] > 10 && (bg[3] < 10 || colorDist(data, i, bg) > tol)) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+      }
+      if (x1 >= x0 && y1 >= y0) imgEd.work = cloneCanvas(w, x1 - x0 + 1, y1 - y0 + 1, x0, y0);
+    },
+    removeBg() {
+      const w = imgEd.work, W = w.width, H = w.height, ctx = w.getContext('2d'), im = ctx.getImageData(0, 0, W, H), d = im.data;
+      const bg = bgColorAt(d, W, H), tol = +$('#imgTol').value * 3;
+      const seen = new Uint8Array(W * H), stack = [];
+      for (let x = 0; x < W; x++) stack.push(x, (H - 1) * W + x);
+      for (let y = 0; y < H; y++) stack.push(y * W, y * W + W - 1);
+      while (stack.length) {
+        const p = stack.pop(); if (seen[p]) continue; seen[p] = 1;
+        const i = p * 4; if (d[i + 3] === 0 ? false : colorDist(d, i, bg) > tol) continue;
+        d[i + 3] = 0;
+        const x = p % W;
+        if (x > 0) stack.push(p - 1); if (x < W - 1) stack.push(p + 1);
+        if (p >= W) stack.push(p - W); if (p < W * (H - 1)) stack.push(p + W);
+      }
+      ctx.putImageData(im, 0, 0);
+    },
+    reset() { imgEd.work = cloneCanvas(imgEd.orig); imgEd.crop = null; },
+    apply() {
+      if (imgEd.crop && imgEd.crop.w > 2) imgEdOps.crop();
+      let w = imgEd.work; const max = 1600;
+      if (Math.max(w.width, w.height) > max) { const k = max / Math.max(w.width, w.height); const c = document.createElement('canvas'); c.width = Math.round(w.width * k); c.height = Math.round(w.height * k); c.getContext('2d').drawImage(w, 0, 0, c.width, c.height); w = c; }
+      imgEd.e.src = w.toDataURL('image/png');
+      $('#imgDlg').close(); afterDesignChange(true);
+    },
+  };
   function getProjects() { try { return JSON.parse(safeGet('projects') || '{}'); } catch (e) { return {}; } }
   function setProjects(p) { return safeSet('projects', JSON.stringify(p)); }
   function saveProject() {
@@ -1455,7 +1957,7 @@
           p[id] = { id, name: pr.name + ' (' + t('copy') + ')', updated: Date.now(), state: Object.assign(clone(pr.state), { id, name: pr.name + ' (' + t('copy') + ')' }) };
           setProjects(p); openProjects();
         } }, t('copy')),
-        h('button', { class: 'btn small', onclick: () => download(fileName(pr.name), JSON.stringify({ app: 'sticker-creator', v: 1, state: pr.state }, null, 1)) }, '⬇'),
+        h('button', { class: 'btn small', onclick: () => download(fileName(pr.name), JSON.stringify({ app: 'sticker-creator', v: 1, state: pr.state, fonts: fontsUsedBy(migrate(pr.state)) }, null, 1)) }, '⬇'),
         h('button', { class: 'btn small danger', onclick: () => {
           if (!confirm(t('confirmDelete'))) return;
           const p = getProjects(); delete p[pr.id]; setProjects(p);
@@ -1468,16 +1970,17 @@
   }
   const fileName = (n) => (n || 'stickers').replace(/[\\/:*?"<>|]+/g, '_') + '.sticker.json';
   function exportFile() {
-    download(fileName(state.name), JSON.stringify({ app: 'sticker-creator', v: 1, state }, null, 1));
+    download(fileName(state.name), JSON.stringify({ app: 'sticker-creator', v: 1, state, fonts: fontsUsedBy(state) }, null, 1));
     toast(t('fileSaved'));
   }
   function importFile(file) {
     const r = new FileReader();
-    r.onload = () => {
+    r.onload = async () => {
       try {
         const obj = JSON.parse(r.result);
         const s = obj.state || obj;
         if (!s.layout || !s.label) throw new Error('bad');
+        await importFonts(obj.fonts);
         const ns = migrate(s); ns.id = null;
         newFromState(ns); toast(t('importOk'));
       } catch (e) { toast(t('importBad')); }
@@ -1531,7 +2034,7 @@
     printingTest = test;
     window.print();
     printingTest = false;
-    if (!test && state.print.remember) rememberPrinted();
+    if (!test) { logPrint(t('print').split(' ')[0]); if (state.print.remember) rememberPrinted(); }
   }
   let printingTest = false;
   function rememberPrinted() {
@@ -1622,6 +2125,35 @@
     });
   }
 
+  async function renderPageCanvas(page, dpi) {
+    await Promise.all($$('img', page).map((im) => (im.decode ? im.decode().catch(() => {}) : null)));
+    return window.html2canvas(page, { scale: dpi / 96, backgroundColor: '#ffffff', logging: false });
+  }
+  async function exportPDF() {
+    const dpi = +$('#pngDpi').value || 300;
+    toast(t('exporting'));
+    try { await Promise.all([loadScript('vendor/html2canvas.min.js'), loadScript('vendor/jspdf.umd.min.js')]); } catch (e) { toast(t('loadFail')); return; }
+    try { await document.fonts.ready; } catch (e) { /* ignore */ }
+    const { L, pages } = printJob();
+    const W = L.P.w, H = L.P.h, orient = W > H ? 'landscape' : 'portrait';
+    const pdf = new window.jspdf.jsPDF({ unit: 'mm', format: [W, H], orientation: orient, compress: true });
+    pdf.setProperties({ title: state.name || 'Stickers', creator: 'Sticker Creator' });
+    const host = h('div', { style: 'position:fixed;left:-20000px;top:0;' }); document.body.append(host);
+    try {
+      for (let i = 0; i < Math.min(pages.length, 200); i++) {
+        const page = renderPage(state, L, pages[i], 'print', pageOpts());
+        host.innerHTML = ''; host.append(page);
+        const canvas = await renderPageCanvas(page, dpi);
+        if (i > 0) pdf.addPage([W, H], orient);
+        pdf.addImage(canvas, 'PNG', 0, 0, W, H, undefined, 'FAST');
+      }
+      saveBlob(pdf.output('blob'), fileName(state.name).replace(/\.sticker\.json$/, '.pdf'));
+      logPrint('PDF');
+      if (state.print.remember) rememberPrinted();
+      toast(t('exported'));
+    } catch (e) { toast(t('loadFail')); }
+    host.remove();
+  }
   async function exportPNG() {
     const dpi = +$('#pngDpi').value || 300;
     toast(t('exporting'));
@@ -1635,8 +2167,7 @@
       for (let i = 0; i < Math.min(pages.length, 50); i++) {
         const page = renderPage(state, L, pages[i], 'print', pageOpts());
         host.innerHTML = ''; host.append(page);
-        await Promise.all($$('img', page).map((im) => (im.decode ? im.decode().catch(() => {}) : null)));
-        const canvas = await window.html2canvas(page, { scale: dpi / 96, backgroundColor: '#ffffff', logging: false });
+        const canvas = await renderPageCanvas(page, dpi);
         const blob = await new Promise((r) => canvas.toBlob(r, 'image/png'));
         saveBlob(blob, `${base}-${t('page')}-${i + 1}.png`);
       }
@@ -1711,6 +2242,101 @@
     toast(`${brand} ${part}`);
   }
 
+  /* ================= print history ================= */
+  function logPrint(kind) {
+    const { printed, pages } = printJob(); if (!printed.length) return;
+    const log = getJSON('printLog', []);
+    log.unshift({ at: Date.now(), kind, project: state.name || '', sheet: state.layout.sheetRef || `${state.layout.cols}×${state.layout.rows}`,
+      count: printed.length, pages: pages.length, first: printed[0].rec.n, last: printed[printed.length - 1].rec.n });
+    setJSON('printLog', log.slice(0, 500));
+  }
+  function openLog() {
+    const box = $('#logBody'); box.innerHTML = '';
+    const log = getJSON('printLog', []);
+    if (!log.length) box.append(h('p', { class: 'empty-msg' }, t('noLog')));
+    else {
+      const tb = h('table', { class: 'log-table' });
+      tb.append(h('tr', null, ...['logWhen', 'logKind', 'logProject', 'logSheet', 'logCount', 'logRange'].map((k) => h('th', null, t(k)))));
+      for (const r of log) tb.append(h('tr', null, h('td', null, new Date(r.at).toLocaleString(lang === 'ar' ? 'ar' : 'en-GB')), h('td', null, r.kind),
+        h('td', { dir: 'auto' }, r.project), h('td', { dir: 'ltr' }, r.sheet), h('td', null, String(r.count)), h('td', { dir: 'ltr' }, `${r.first} → ${r.last}`)));
+      box.append(h('div', { class: 'log-wrap' }, tb));
+    }
+    box.append(h('div', { class: 'dlg-actions' },
+      h('button', { class: 'btn', type: 'button', disabled: !log.length, onclick: () => {
+        const rows = [['date', 'type', 'project', 'sheet', 'count', 'pages', 'first', 'last'],
+          ...log.map((r) => [new Date(r.at).toISOString(), r.kind, r.project, r.sheet, r.count, r.pages, r.first, r.last])];
+        download('print-history.csv', '\ufeff' + rows.map((r) => r.map((c) => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n'), 'text/csv');
+      } }, t('exportCsv')),
+      h('button', { class: 'btn danger', type: 'button', disabled: !log.length, onclick: () => { if (confirm(t('confirmDelete'))) { setJSON('printLog', []); openLog(); } } }, t('clearLog'))));
+    if (!$('#logDlg').open) $('#logDlg').showModal();
+  }
+
+  /* ================= share link (design packed into the URL hash) ================= */
+  const b64u = { enc: (u8) => { let s2 = ''; for (let i = 0; i < u8.length; i += 0x8000) s2 += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s2).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); },
+    dec: (str) => { const b = atob(str.replace(/-/g, '+').replace(/_/g, '/')); const u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; } };
+  async function streamBytes(u8, Ctor, fmt) { const cs = new Ctor(fmt); const out = new Response(new Blob([u8]).stream().pipeThrough(cs)); return new Uint8Array(await out.arrayBuffer()); }
+  async function makeShareLink() {
+    const st = clone(state); st.id = null; st.data.lastPrinted = null;
+    let stripped = false;
+    const size = () => JSON.stringify(st).length;
+    if (size() > 150000) {
+      for (const e of st.label.elements) if (e.type === 'image' && e.src) { e.src = ''; stripped = true; }
+      if (st.label.bgImage) { st.label.bgImage = ''; stripped = true; }
+    }
+    const raw = new TextEncoder().encode(JSON.stringify({ v: 1, state: st }));
+    let token;
+    if (window.CompressionStream) token = 'z' + b64u.enc(await streamBytes(raw, CompressionStream, 'deflate-raw'));
+    else token = 'r' + b64u.enc(raw);
+    return { url: location.href.split('#')[0] + '#d=' + token, stripped };
+  }
+  async function openShare() {
+    const { url, stripped } = await makeShareLink();
+    $('#shareUrl').value = url;
+    $('#shareWarn').hidden = !stripped;
+    $('#shareLen').textContent = `${Math.round(url.length / 1024)} KB`;
+    $('#shareDlg').showModal(); $('#shareUrl').select();
+  }
+  async function readShareLink() {
+    const m = /^#d=([zr])([A-Za-z0-9_-]+)$/.exec(location.hash || ''); if (!m) return null;
+    try {
+      let bytes = b64u.dec(m[2]);
+      if (m[1] === 'z') bytes = await streamBytes(bytes, DecompressionStream, 'deflate-raw');
+      const obj = JSON.parse(new TextDecoder().decode(bytes));
+      window.history.replaceState(null, '', location.pathname + location.search);
+      if (!obj || !obj.state || !obj.state.layout) return null;
+      if (safeGet('autosave') && !confirm(t('openShared'))) return null;
+      return migrate(obj.state);
+    } catch (e) { console.warn('share link', e); return null; }
+  }
+
+  /* ================= guided tour ================= */
+  const TOUR = [['.settings', 'tour1'], ['.toolbar', 'tour2'], ['#stage', 'tour3'], ['.inspector', 'tour4'], ['.tab[data-tab=data]', 'tour5'], ['.preview-head', 'tour6'], ['.topbar .actions', 'tour7']];
+  let tourStep = -1;
+  function maybeStartTour() { if (!safeGet('tourDone') && !navigator.webdriver) setTimeout(() => startTour(), 600); }
+  function startTour() { tourStep = 0; showTourStep(); }
+  function endTour() { tourStep = -1; $('#tour').hidden = true; safeSet('tourDone', '1'); }
+  function showTourStep() {
+    const [sel, key] = TOUR[tourStep]; const target = $(sel);
+    const tour = $('#tour'); tour.hidden = false;
+    if (target) target.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+    const r = target ? target.getBoundingClientRect() : { left: innerWidth / 2 - 50, top: innerHeight / 2 - 50, width: 100, height: 100 };
+    const spot = $('.tour-spot', tour);
+    const pad = 6, top = Math.max(4, r.top - pad), left = Math.max(4, r.left - pad);
+    const w = Math.min(innerWidth - left - 4, r.width + pad * 2), hh = Math.min(innerHeight - top - 4, r.height + pad * 2);
+    Object.assign(spot.style, { top: top + 'px', left: left + 'px', width: w + 'px', height: hh + 'px' });
+    const bub = $('.tour-bubble', tour);
+    $('.tour-text', bub).textContent = t(key);
+    $('.tour-count', bub).textContent = `${tourStep + 1} / ${TOUR.length}`;
+    $('[data-tour=prev]', bub).disabled = tourStep === 0;
+    $('[data-tour=next]', bub).textContent = tourStep === TOUR.length - 1 ? t('done') : t('next');
+    const bw = Math.min(320, innerWidth - 24);
+    bub.style.width = bw + 'px';
+    let by = top + hh + 10; if (by + 170 > innerHeight) by = Math.max(10, top - 180);
+    if (hh > innerHeight * 0.6) by = Math.min(innerHeight - 190, top + 20);
+    let bx = clamp(left + w / 2 - bw / 2, 12, innerWidth - bw - 12);
+    Object.assign(bub.style, { top: by + 'px', left: bx + 'px' });
+  }
+
   /* ================= i18n apply / theme ================= */
   function applyLang() {
     document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -1726,7 +2352,7 @@
   }
 
   function renderAll() {
-    syncSettingsUI(); renderPresets(); renderVarChips(); renderLastPrinted(); renderEditor(); renderInspector(); renderLayers(); renderSheet(); updateSaveState(); updateUndoButtons();
+    syncSettingsUI(); renderPresets(); renderVarChips(); renderLastPrinted(); updateEditedInfo(); renderEditor(); renderInspector(); renderLayers(); renderSheet(); updateSaveState(); updateUndoButtons();
   }
 
   /* ================= wiring ================= */
@@ -1742,6 +2368,9 @@
       templates: openTemplates, projects: openProjects, save: saveProject, undo, redo,
       export: exportFile, import: () => $('#importInput').click(), print: openPrintDlg,
       doPrint: () => doPrint(false), testPrint: () => doPrint(true), exportPng: exportPNG, library: openLibrary,
+      exportPdf: exportPDF, share: openShare, printLog: openLog, help: startTour,
+      copyShare: async () => { const v = $('#shareUrl').value; try { await navigator.clipboard.writeText(v); } catch (e) { $('#shareUrl').select(); document.execCommand('copy'); } toast(t('linkCopied')); },
+      clearEdits: () => { if (!confirm(t('confirmDelete'))) return; state.data.overrides = {}; commit(); renderSheet(); updateEditedInfo(); },
       lang: () => { lang = lang === 'ar' ? 'en' : 'ar'; safeSet('lang', lang); applyLang(); renderAll(); },
       theme: () => {
         const dark = document.documentElement.dataset.theme === 'dark' ||
@@ -1760,9 +2389,20 @@
     $('#importInput').addEventListener('change', (ev) => { const f = ev.target.files[0]; ev.target.value = ''; if (f) importFile(f); });
     $('#csvInput').addEventListener('change', (ev) => {
       const f = ev.target.files[0]; ev.target.value = ''; if (!f) return;
+      const done = (txt) => { state.data.csv = txt; csvCache.text = null; syncSettingsUI(); renderVarChips(); renderEditor(); scheduleSheet(); commit(); };
       const r = new FileReader();
-      r.onload = () => { state.data.csv = String(r.result); csvCache.text = null; syncSettingsUI(); renderVarChips(); renderEditor(); scheduleSheet(); commit(); };
-      r.readAsText(f);
+      if (/\.(xlsx|xlsm|xlsb|xls|ods)$/i.test(f.name)) {
+        r.onload = async () => {
+          try {
+            await loadScript('vendor/xlsx.mini.min.js');
+            const wb = window.XLSX.read(new Uint8Array(r.result), { type: 'array' });
+            const ws = wb.Sheets[wb.SheetNames[0]];
+            done(window.XLSX.utils.sheet_to_csv(ws, { blankrows: false }));
+            toast(`${wb.SheetNames[0]} ✓`);
+          } catch (e) { toast(t('importBad')); }
+        };
+        r.readAsArrayBuffer(f);
+      } else { r.onload = () => done(String(r.result)); r.readAsText(f); }
     });
     $('#projectName').addEventListener('input', (ev) => { state.name = ev.target.value; scheduleCommit(); });
     $('#previewZoom').addEventListener('input', () => { safeSet('previewZoom', $('#previewZoom').value); scheduleSheet(); });
@@ -1780,7 +2420,7 @@
     stage.addEventListener('dblclick', (ev) => {
       const n = ev.target.closest('.el'); if (!n) return;
       const e = findEl(n.dataset.id);
-      if (e && e.type === 'image') pickImage((src) => { e.src = src; afterDesignChange(true); });
+      if (e && e.type === 'image') { if (e.src) openImageEditor(e); else pickImage((src) => { e.src = src; afterDesignChange(true); }); }
       else { const ta = $('#inspector textarea, #inspector input[type=text]'); if (ta) { ta.focus(); ta.select(); } }
     });
 
@@ -1812,6 +2452,22 @@
     });
 
     window.addEventListener('beforeprint', () => renderPrint(printingTest));
+    $$('[data-pmode]').forEach((b) => b.addEventListener('click', () => {
+      previewMode = b.dataset.pmode; $$('[data-pmode]').forEach((x) => x.classList.toggle('on', x === b));
+      $('#sheetPreview').classList.toggle('edit-mode', previewMode === 'edit');
+    }));
+    imgEdPointer();
+    $$('[data-img]').forEach((b) => b.addEventListener('click', () => { imgEdOps[b.dataset.img](); if (b.dataset.img !== 'apply') drawImgEd(); }));
+    $('#tour').addEventListener('click', (ev) => {
+      const b = ev.target.closest('[data-tour]'); if (!b) return;
+      const a = b.dataset.tour;
+      if (a === 'skip') return endTour();
+      tourStep += a === 'next' ? 1 : -1;
+      if (tourStep >= TOUR.length) return endTour();
+      showTourStep();
+    });
+    window.addEventListener('resize', () => { if (tourStep >= 0) showTourStep(); });
+    loadScript('data/icons.js').then(() => { if (selSet.size) renderInspector(); renderEditor(); scheduleSheet(); }).catch(() => {});
     wirePrintDlg();
     $('#gridToggle').checked = showGrid;
     $('#gridToggle').addEventListener('change', (ev) => { showGrid = ev.target.checked; safeSet('grid', showGrid ? '1' : '0'); renderEditor(); });
@@ -1824,13 +2480,23 @@
   }
 
   /* ================= boot ================= */
-  applyTheme();
-  applyLang();
-  loadInitial();
-  wire();
-  commit();
-  renderAll();
+  async function boot() {
+    applyTheme();
+    applyLang();
+    await KV.init();
+    await loadUserFonts();
+    const fromLink = await readShareLink();
+    loadInitial();
+    wire();
+    if (fromLink) { state = fromLink; state.id = null; lastSavedSnap = null; toast(t('linkOpened')); }
+    commit();
+    renderAll();
+    maybeStartTour();
+    if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+  boot().then(() => {
   libLoad().then((db) => { $('#libCount').textContent = db.length; }).catch(() => {});
-  // Expose for debugging
-  window.StickerCreator = { get state() { return state; }, paginate: () => paginate(state) };
+  });
+  // Expose for debugging / tests
+  window.StickerCreator = { get state() { return state; }, paginate: () => paginate(state), fmt: (str, rec) => fillTpl(str, rec || {}), KV };
 })();

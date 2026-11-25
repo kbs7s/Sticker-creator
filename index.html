@@ -6,9 +6,10 @@
 <title>مصمم الملصقات A4</title>
 <meta name="description" content="Design A4 sheets with multiple stickers: layout, margins, text, numbering, barcodes, QR codes, images and print preview.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='3' fill='%23ea6a1f'/%3E%3Cg fill='%23fff'%3E%3Crect x='7' y='6' width='8' height='6' rx='1'/%3E%3Crect x='17' y='6' width='8' height='6' rx='1'/%3E%3Crect x='7' y='14' width='8' height='6' rx='1'/%3E%3Crect x='17' y='14' width='8' height='6' rx='1'/%3E%3Crect x='7' y='22' width='8' height='5' rx='1'/%3E%3Crect x='17' y='22' width='8' height='5' rx='1'/%3E%3C/g%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&family=Changa:wght@400;700&family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#e8651d">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
     <button class="btn" data-act="templates" data-i18n="templates">القوالب</button>
     <button class="btn" data-act="projects" data-i18n="projects">مشاريعي</button>
     <button class="btn primary" data-act="save" data-i18n="save">حفظ</button>
+    <button class="btn" data-act="share" data-i18n="share">مشاركة</button>
     <span class="sep"></span>
     <button class="btn icon" data-act="undo" data-i18n-title="undo" title="تراجع">↶</button>
     <button class="btn icon" data-act="redo" data-i18n-title="redo" title="إعادة">↷</button>
@@ -33,6 +35,7 @@
     <button class="btn accent" data-act="print" data-i18n="print">طباعة / PDF</button>
     <button class="btn icon" data-act="lang" title="Language">EN</button>
     <button class="btn icon" data-act="theme" data-i18n-title="theme" title="المظهر">◐</button>
+    <button class="btn icon" data-act="help" data-i18n-title="help" title="دليل سريع">?</button>
   </div>
   <input id="importInput" type="file" accept=".json,application/json" hidden>
 </header>
@@ -138,7 +141,7 @@
           <button class="btn small" data-act="loadCsv" data-i18n="loadCsv">تحميل ملف CSV</button>
           <label class="inline"><span data-i18n="copiesPerRow">نسخ لكل صف</span><input type="number" min="1" max="100" data-bind="data.csvCopies"></label>
         </div>
-        <input id="csvInput" type="file" accept=".csv,.txt,.tsv,text/csv" hidden>
+        <input id="csvInput" type="file" accept=".csv,.txt,.tsv,.xlsx,.xlsm,.xls,.ods,text/csv" hidden>
         <div id="csvInfo" class="info"></div>
       </div>
 
@@ -173,6 +176,8 @@
       <button class="btn small" data-add="rect" data-i18n="elRect">مستطيل</button>
       <button class="btn small" data-add="ellipse" data-i18n="elEllipse">دائرة</button>
       <button class="btn small" data-add="line" data-i18n="elLine">خط</button>
+      <button class="btn small" data-add="arctext" data-i18n="elArc">نص دائري</button>
+      <button class="btn small" data-add="icon" data-i18n="elIcon">أيقونة</button>
       <span class="grow"></span>
       <label class="check inline"><input type="checkbox" id="snapToggle" checked><span data-i18n="snap">محاذاة للشبكة</span></label>
       <label class="check inline"><input type="checkbox" id="gridToggle"><span data-i18n="showGrid">إظهار الشبكة والمساطر</span></label>
@@ -187,6 +192,10 @@
     <div class="preview-head">
       <h2 data-i18n="sheetPreview">معاينة الورقة قبل الطباعة</h2>
       <span id="previewInfo" class="info"></span>
+      <span class="inline-group pmode"><span class="hint" data-i18n="clickAction">عند النقر على ملصق:</span>
+        <button class="btn small on" data-pmode="skip" data-i18n="clickSkip">تخطي</button>
+        <button class="btn small" data-pmode="edit" data-i18n="clickEdit">تعديل نصه</button></span>
+      <span id="editedInfo" class="inline-group" hidden><span class="badge"></span><button class="btn small" data-act="clearEdits" data-i18n="clearEdits">مسح التعديلات</button></span>
       <span class="grow"></span>
       <label class="inline"><span data-i18n="previewZoom">الحجم</span>
         <input id="previewZoom" type="range" min="20" max="100" value="45">
@@ -215,7 +224,63 @@
   <form method="dialog" class="dlg-head"><h2 data-i18n="projects">مشاريعي</h2><button class="btn icon" value="close">✕</button></form>
   <p class="hint" data-i18n="projectsHint">تُحفظ المشاريع في متصفحك على هذا الجهاز. استخدم "تصدير ملف" لنقلها أو أخذ نسخة احتياطية.</p>
   <ul id="projectList" class="project-list"></ul>
+  <p style="padding:0 16px 16px"><button class="btn small" data-act="printLog" data-i18n="printLog">سجل الطباعة</button></p>
 </dialog>
+
+<dialog id="labelDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="clickEdit">تعديل نصه</h2><button class="btn icon" value="close">✕</button></form>
+  <div id="labelDlgBody" class="dlg-body"></div>
+</dialog>
+
+<dialog id="imgDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="imgEditor">تحرير الصورة</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <p class="hint" data-i18n="cropHint"></p>
+    <div class="img-stage"><canvas id="imgCanvas"></canvas></div>
+    <div id="imgSize" class="info"></div>
+    <div class="dlg-actions">
+      <button class="btn small" data-img="crop" data-i18n="crop">قص التحديد</button>
+      <button class="btn small" data-img="rotate" data-i18n="rotate90">تدوير 90°</button>
+      <button class="btn small" data-img="flip" data-i18n="flip">قلب</button>
+      <button class="btn small" data-img="trim" data-i18n="trim">قص الحواف الفارغة</button>
+      <button class="btn small" data-img="removeBg" data-i18n="removeBg">إزالة الخلفية</button>
+      <label class="inline"><span data-i18n="tolerance">درجة التسامح</span><input id="imgTol" type="range" min="2" max="120" value="30"></label>
+    </div>
+    <div class="dlg-actions">
+      <button class="btn" data-img="reset" data-i18n="reset">إرجاع</button>
+      <span class="grow"></span>
+      <button class="btn accent" data-img="apply" data-i18n="apply">تطبيق</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="shareDlg" class="dlg narrow">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="shareTitle">رابط مشاركة التصميم</h2><button class="btn icon" value="close">✕</button></form>
+  <div class="dlg-body">
+    <p class="hint" data-i18n="shareHint"></p>
+    <textarea id="shareUrl" class="mono" rows="4" readonly></textarea>
+    <p id="shareWarn" class="warn" data-i18n="imagesStripped" hidden></p>
+    <div class="dlg-actions"><span id="shareLen" class="info"></span><span class="grow"></span><button class="btn accent" data-act="copyShare" data-i18n="copyLink">نسخ الرابط</button></div>
+  </div>
+</dialog>
+
+<dialog id="logDlg" class="dlg">
+  <form method="dialog" class="dlg-head"><h2 data-i18n="printLog">سجل الطباعة</h2><button class="btn icon" value="close">✕</button></form>
+  <div id="logBody" class="dlg-body"></div>
+</dialog>
+
+<div id="tour" class="tour" hidden>
+  <div class="tour-spot"></div>
+  <div class="tour-bubble" role="dialog" aria-live="polite">
+    <p class="tour-text"></p>
+    <div class="tour-nav">
+      <span class="tour-count"></span><span class="grow"></span>
+      <button class="btn small" data-tour="skip" data-i18n="skipTour">تخطي</button>
+      <button class="btn small" data-tour="prev" data-i18n="prev">السابق</button>
+      <button class="btn small accent" data-tour="next" data-i18n="next">التالي</button>
+    </div>
+  </div>
+</div>
 
 <dialog id="libraryDlg" class="dlg">
   <form method="dialog" class="dlg-head"><h2 data-i18n="sheetLibrary">مكتبة أوراق الملصقات التجارية</h2><button class="btn icon" value="close">✕</button></form>
@@ -262,9 +327,11 @@
         <button class="btn" data-act="exportPng" data-i18n="exportPng">تصدير PNG</button>
         <select id="pngDpi" aria-label="DPI"><option value="150">150 dpi</option><option value="300" selected>300 dpi</option></select>
       </span>
+      <button class="btn" data-act="exportPdf" data-i18n="downloadPdf">تنزيل PDF</button>
       <span class="grow"></span>
       <button class="btn accent" data-act="doPrint" data-i18n="print">طباعة / PDF</button>
     </div>
+    <p><button class="btn small" data-act="printLog" data-i18n="printLog">سجل الطباعة</button></p>
     <p class="hint" data-i18n="printTips">في نافذة الطباعة: الهوامش = بلا، المقياس = 100%، وفعّل رسومات الخلفية.</p>
   </div>
 </dialog>
